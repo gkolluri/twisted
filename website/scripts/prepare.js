@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Injects the correct site URL for OG tags and canonical links at build time.
- * Vercel sets VERCEL_URL; set SITE_URL=https://twisteddfw.com in Vercel env once the custom domain is live.
+ * Builds static site into public/ with SITE_URL injected.
+ * Vercel sets VERCEL_URL; set SITE_URL=https://twisteddfw.com once the custom domain is live.
  */
 const fs = require('fs');
 const path = require('path');
@@ -16,13 +16,38 @@ const siteUrl = (
 ).replace(/\/$/, '');
 
 const root = path.join(__dirname, '..');
-const files = ['index.html', 'events.html', 'menu.html', 'robots.txt', 'sitemap.xml'];
+const outDir = path.join(root, 'public');
 
-for (const file of files) {
-  const filePath = path.join(root, file);
-  let html = fs.readFileSync(filePath, 'utf8');
-  html = html.replace(/\{\{SITE_URL\}\}/g, siteUrl);
-  fs.writeFileSync(filePath, html);
+const skipDirs = new Set(['public', 'scripts', 'node_modules', '.vercel']);
+const skipFiles = new Set(['package.json', 'vercel.json']);
+
+function copyDir(src, dest) {
+  fs.mkdirSync(dest, { recursive: true });
+  for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
+    if (entry.name.startsWith('.')) continue;
+    const srcPath = path.join(src, entry.name);
+    const destPath = path.join(dest, entry.name);
+
+    if (entry.isDirectory()) {
+      if (skipDirs.has(entry.name)) continue;
+      copyDir(srcPath, destPath);
+      continue;
+    }
+
+    if (skipFiles.has(entry.name)) continue;
+
+    if (/\.(html|xml|txt)$/.test(entry.name)) {
+      const content = fs.readFileSync(srcPath, 'utf8').replace(/\{\{SITE_URL\}\}/g, siteUrl);
+      fs.writeFileSync(destPath, content);
+    } else {
+      fs.copyFileSync(srcPath, destPath);
+    }
+  }
 }
 
-console.log(`SEO URLs set to: ${siteUrl}`);
+if (fs.existsSync(outDir)) {
+  fs.rmSync(outDir, { recursive: true, force: true });
+}
+
+copyDir(root, outDir);
+console.log(`Built public/ with SITE_URL=${siteUrl}`);
