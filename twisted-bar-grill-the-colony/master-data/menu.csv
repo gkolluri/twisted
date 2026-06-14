@@ -1,0 +1,39 @@
+id,name,name_te,category,price,description,desc_te,is_veg,spice_level,is_available
+item_001,Twisted Potato,,Appetizers,10.00,Crispy fried ribbon potato with seasoned salt,,,TRUE,,TRUE
+item_002,Twisted Heart,,Appetizers,10.80,Giant pretzel with queso and spicy mustard,,,TRUE,,TRUE
+item_003,Bang on Shrimp,,Appetizers,16.00,Crunchy fried shrimp with house spicy mayo and jalapeños,,,FALSE,,TRUE
+item_004,Loaded Tots,,Appetizers,10.00,Tater tots with queso sour cream pico bacon and green onions,,,FALSE,,TRUE
+item_005,Flautas,,Appetizers,10.00,Five chicken and cheese taquitos with queso pico sour cream salsa,,,FALSE,,TRUE
+item_006,Chips and Guacamole,,Appetizers,11.00,Homemade corn chips with fresh guacamole,,,TRUE,,TRUE
+item_007,Chips and Queso,,Appetizers,10.00,Homemade corn chips with queso and peppers,,,TRUE,,TRUE
+item_008,Chips and Salsa,,Appetizers,7.00,Homemade corn chips with fresh salsa,,,TRUE,,TRUE
+item_009,Mozzarella Sticks,,Appetizers,8.00,Six mozzarella sticks with marinara,,,TRUE,,TRUE
+item_010,Jalapeno Strips,,Appetizers,9.00,Hand-battered fried jalapeño strips,,,TRUE,medium,TRUE
+item_011,Pickle Chips,,Appetizers,9.00,Hand-battered fried pickles with Cajun ranch,,,TRUE,,TRUE
+item_012,Hummus,,Appetizers,11.00,Chickpea dip with warm pita and cucumber chips,,,TRUE,,TRUE
+item_013,Falafel,,Appetizers,10.00,Chickpea fritters with pita and garlic sauce,,,TRUE,,TRUE
+item_014,Samosa,,Appetizers,10.00,Fried pastry with spiced potato onion and pea filling,,,TRUE,medium,TRUE
+item_015,Steak Loaded Nacho,,Appetizers,14.00,Grilled ribeye corn chips beans pico queso sour cream jalapeños,,,FALSE,,TRUE
+item_016,Chicken Loaded Nacho,,Appetizers,14.00,Grilled chicken corn chips beans pico queso sour cream jalapeños,,,FALSE,,TRUE
+item_017,Shrimp Loaded Nacho,,Appetizers,20.00,Grilled shrimp corn chips beans pico queso sour cream jalapeños,,,FALSE,,TRUE
+item_018,Caesar Salad,,Salads,12.00,Crunchy herbed croutons and fresh parmesan,,,TRUE,,TRUE
+item_019,Cobb Salad,,Salads,14.00,Bacon avocado egg tomato blue cheese and mixed greens,,,FALSE,,TRUE
+item_020,Twisted Naked Wings,,Wings,14.00,Classic naked wings — ask for sauce flavor,,,FALSE,,TRUE
+item_021,House Special Wings,,Wings,15.00,Wings with house Indian dry rub,,,FALSE,medium,TRUE
+item_022,Buffalo Lemon Pepper Wings,,Wings,14.00,Buffalo lemon pepper sauced wings,,,FALSE,medium,TRUE
+item_023,Fried Cauliflower,,Appetizers,12.00,Spicy battered fried cauliflower,,,TRUE,medium,TRUE
+item_024,Angus Beef Burger,,Handhelds,16.00,Fresh beef patty with cheese lettuce tomato onion pickle,,,FALSE,,TRUE
+item_025,California Grilled Chicken Sandwich,,Handhelds,16.00,Grilled chicken swiss avocado spiced mayo LTO,,,FALSE,,TRUE
+item_026,Nashville Chicken Sandwich,,Handhelds,16.00,Spicy Nashville-style chicken sandwich,,,FALSE,hot,TRUE
+item_027,Steak Taco (3),,Tacos,12.00,Grilled steak with onion and cilantro,,,FALSE,,TRUE
+item_028,Steak Taco Plate,,Tacos,14.00,Steak tacos plate with sides,,,FALSE,,TRUE
+item_029,Fish Tacos,,Tacos,14.00,Fresh fish tacos — ask server for today's prep,,,FALSE,,TRUE
+item_030,Fish and Chips,,Main,18.00,Battered cod with tartar sauce and fries,,,FALSE,,TRUE
+item_031,Catfish Plate,,Main,19.00,Catfish plate with sides,,,FALSE,,TRUE
+item_032,Chicken Fried Chicken,,Main,18.00,Chicken fried chicken over mashed potatoes with mixed veggies,,,FALSE,,TRUE
+item_033,Chicken Tenders and Fries,,Main,14.00,Chicken tenders with fries,,,FALSE,,TRUE
+item_034,Surf and Turf,,Main,30.00,Sea and land fusion plate,,,FALSE,,TRUE
+item_035,Mac and Cheese,,Sides,3.60,Creamy mac and cheese side,,,TRUE,,TRUE
+item_036,French Fries,,Sides,5.00,Classic fries,,,TRUE,,TRUE
+item_037,Lava Chocolate Cake,,Desserts,12.00,Warm chocolate cake with vanilla ice cream,,,TRUE,,TRUE
+item_038,New York Style Cheesecake,,Desserts,10.00,Classic NY cheesecake,,,TRUE,,TRUE

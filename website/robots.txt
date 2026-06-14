@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://twisteddfw.com/sitemap.xml
+Host: https://twisteddfw.com

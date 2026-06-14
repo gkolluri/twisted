@@ -1,0 +1,7 @@
+key,value,notes
+restaurant_open,yes,"yes = open today (checks hours.csv) | no = force closed"
+accepting_phone_orders,yes,"yes = full phone orders when mode=ordering | no = info/callback only"
+accepting_catering_callbacks,yes,"yes = private event / large party callback | no = in-person only"
+accepting_table_reservations,yes,"yes = table reservations when open now | no = walk-ins only"
+overflow_agent_active,yes,"yes = AI answers calls | no = call restaurant during hours"
+status_note,,

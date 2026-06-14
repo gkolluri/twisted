@@ -1,0 +1,14 @@
+{
+  "id": "dd4283d12457",
+  "created_at": "2026-06-02T23:20:10.732011-04:00",
+  "timezone": "America/New_York",
+  "tenant": "twisted-bar-grill-the-colony",
+  "intent_type": "reservation",
+  "intent_summary": "Table for 8 on June 5 at 10 PM — Party of 8; large party—team may follow up to confirm seating.",
+  "customer_name": "Girish Kowluru",
+  "customer_phone": "",
+  "caller_language": "en",
+  "follow_up_action": "Confirm table reservation for 8 on June 5 at 10 PM",
+  "job_id": "mock-job-ca66262724e3",
+  "room_name": "console"
+}

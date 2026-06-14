@@ -1,0 +1,16 @@
+id,question,question_te,answer,answer_te,category
+faq_000,Are you open today?,Are you open today?,Use Right now (auto) in MASTER DATA. We open daily at 11 AM; bar open late (around 2 AM). Do not list full week unless asked.,Use Right now in MASTER DATA.,hours
+faq_001,What are your hours?,What are your hours?,"Open daily 11:00 AM – 2:00 AM. Kitchen serves lunch through late evening; full bar and late-night vibe on weekends.",Daily 11 AM to 2 AM.,hours
+faq_002,Where are you located?,Where are you located?,"6520 Cascades Court #200, The Colony, TX 75056 — Cascades at The Colony, near Grandscape and Topgolf.",The Colony — Cascades Court near Grandscape.,location
+faq_003,Do you offer delivery or takeout?,Do you offer delivery or takeout?,Yes — order delivery or pickup on Uber Eats. Dine-in and patio seating available.,Uber Eats delivery and pickup; dine-in yes.,other
+faq_004,Do you have a full bar?,Full bar?,"Yes — full bar with craft cocktails, beer, wine, and specialty drinks.",Full bar yes.,other
+faq_005,Live music or events?,Events?,"Yes — live bands, DJs, trivia, and themed nights. Check our website or social for this week's schedule.",Live music and events — see website.,other
+faq_006,Do you have outdoor seating?,Patio?,Yes — patio seating available (weather permitting).,Patio yes.,other
+faq_007,What are you known for?,Known for?,"Twisted Potato, wings (including house Indian dry rub), steak tacos, burgers, loaded nachos, fish and chips, full bar, hookah, and a lively sports-bar atmosphere.",Twisted Potato wings tacos burgers hookah full bar.,menu
+faq_008,Vegetarian or gluten-free options?,Dietary options?,"Yes — several items marked V or GF on menu (Twisted Potato, hummus, falafel, chips and guacamole, some salads). Ask your server for specifics.",V and GF options available — ask server.,menu
+faq_009,Can I watch the game?,Watch sports?,Yes — multiple TVs; staff can often change channels for big games when you ask.,Sports on TV — ask staff to change channel.,other
+faq_010,Private events or catering?,Events?,"Large parties and events — take name and callback via save_caller_intent; team follows up on details.",Large parties — callback for details.,catering
+faq_011,Payment methods?,Payment?,Cash and major credit cards. Pay online when ordering Uber Eats.,Cash cards; Uber Eats online.,payment
+faq_012,Reservations?,Reservations?,"Walk-ins welcome. For larger groups or reservations when open, use submit_table_reservation or save_caller_intent.",Walk-ins welcome; table tool when open for groups.,reservation
+faq_013,Do you have hookah?,Hookah?,"Yes — hookah is available. Ask your server for flavors and pricing when you visit.",Hookah available — ask server for flavors and pricing.,other
+faq_014,What kind of music does the DJ play?,DJ music?,"Our DJ spins a mix of throwbacks, R&B, pop, and more — great for dancing and late-night vibes. Check our website or social for DJ nights and schedule.",DJ plays throwbacks R&B pop and more.,other

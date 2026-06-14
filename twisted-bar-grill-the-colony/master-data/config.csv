@@ -1,0 +1,24 @@
+key,value
+restaurant_name,Twisted Bar & Grill
+location_short,The Colony (DFW / Grandscape area)
+phone,+12144077587
+address,"6520 Cascades Court #200, The Colony, TX 75056"
+cuisine_type,American bar and grill
+language,en
+pos_type,uber_eats
+website,https://twisted-bar-grill.menu-world.com/
+order_online_url,https://www.ubereats.com/store/twisted-bar-and-grill/57qdN_IaStSmUHzY-AwRbA
+email,info@twisteddfw.com
+call_summary_email,girishkolluri@gmail.com
+send_call_summary_email,yes
+delivery_areas,"The Colony, Frisco, Lewisville, Plano, Carrollton, and nearby North Dallas suburbs (Uber Eats delivery when available)"
+full_bar,yes
+hookah,yes
+outdoor_seating,yes
+live_entertainment,yes
+tax_rate_percent,8.25
+default_pickup_eta_mins,30
+timezone,America/Chicago
+menu_price_source,"Public menu snapshot (menu-world.com / Uber Eats) — confirm rare items with kitchen before quoting"
+kitchen_hours,"Daily 11:00 AM – late (kitchen closes before bar; bar open until ~2:00 AM)"
+bar_hours,"Daily 11:00 AM – 2:00 AM"
