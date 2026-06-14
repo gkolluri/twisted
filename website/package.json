@@ -1,5 +1,8 @@
 {
   "name": "twisteddfw",
   "private": true,
-  "description": "Twisted Bar & Grill — static website for twisteddfw.com"
+  "description": "Twisted Bar & Grill — static website for twisteddfw.com",
+  "scripts": {
+    "build": "node scripts/prepare.js"
+  }
 }
