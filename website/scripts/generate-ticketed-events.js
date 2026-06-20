@@ -24,7 +24,7 @@ function esc(s) {
 
 function ogImage(event) {
   if (event.image) return `{{SITE_URL}}/${event.image}`;
-  return '{{SITE_URL}}/images/og-image.jpg';
+  return '{{SITE_URL}}/images/hero-patio.png';
 }
 
 function imageBlock(event) {

@@ -6,27 +6,34 @@
 const fs = require('fs');
 const path = require('path');
 
+const trimUrl = (url) => url.replace(/\/$/, '');
+
+const deploymentUrl = process.env.VERCEL_URL
+  ? trimUrl(`https://${process.env.VERCEL_URL}`)
+  : null;
+
 const siteUrl = (() => {
-  const trim = (url) => url.replace(/\/$/, '');
-
-  // Preview and branch deploys: always use the live deployment URL for OG/canonical.
-  if (process.env.VERCEL_ENV && process.env.VERCEL_ENV !== 'production' && process.env.VERCEL_URL) {
-    return trim(`https://${process.env.VERCEL_URL}`);
-  }
-
-  if (process.env.SITE_URL) {
-    return trim(process.env.SITE_URL);
-  }
+  if (process.env.SITE_URL) return trimUrl(process.env.SITE_URL);
 
   if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
-    return trim(`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`);
+    return trimUrl(`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`);
   }
 
-  if (process.env.VERCEL_URL) {
-    return trim(`https://${process.env.VERCEL_URL}`);
-  }
+  if (deploymentUrl) return deploymentUrl;
 
   return 'https://twisteddfw.com';
+})();
+
+const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? trimUrl(`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`)
+  : null;
+
+// Social crawlers must fetch images from a live host at build time.
+const ogUrl = (() => {
+  if (!deploymentUrl) return siteUrl;
+  if (siteUrl === deploymentUrl) return siteUrl;
+  if (productionHost && siteUrl === productionHost) return siteUrl;
+  return deploymentUrl;
 })();
 
 const root = path.join(__dirname, '..');
@@ -48,8 +55,22 @@ function analyticsSnippet(measurementId) {
 </script>`;
 }
 
+function rewriteSocialImageUrls(content) {
+  if (ogUrl === siteUrl) return content;
+
+  const escapedSiteUrl = siteUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return content.replace(
+    new RegExp(`((?:property="og:image(?::secure_url)?"|name="twitter:image") content=")${escapedSiteUrl}(/images/[^"]+)(")`, 'g'),
+    `$1${ogUrl}$2$3`
+  );
+}
+
+function injectUrls(content) {
+  return rewriteSocialImageUrls(content.replace(/\{\{SITE_URL\}\}/g, siteUrl));
+}
+
 function processHtml(content) {
-  let out = content.replace(/\{\{SITE_URL\}\}/g, siteUrl);
+  let out = injectUrls(content);
   if (out.includes('{{FEATURED_EVENTS_GRID}}')) {
     const gridPath = path.join(root, 'events-featured-grid.html');
     const grid = fs.existsSync(gridPath) ? fs.readFileSync(gridPath, 'utf8') : '';
@@ -89,7 +110,7 @@ function copyDir(src, dest) {
       const raw = fs.readFileSync(srcPath, 'utf8');
       const content = /\.html$/.test(entry.name)
         ? processHtml(raw)
-        : raw.replace(/\{\{SITE_URL\}\}/g, siteUrl);
+        : injectUrls(raw);
       fs.writeFileSync(destPath, content);
     } else {
       fs.copyFileSync(srcPath, destPath);
@@ -102,4 +123,4 @@ if (fs.existsSync(outDir)) {
 }
 
 copyDir(root, outDir);
-console.log(`Built public/ with SITE_URL=${siteUrl} GA4=${gaMeasurementId || 'disabled'}`);
+console.log(`Built public/ with SITE_URL=${siteUrl} OG_URL=${ogUrl} GA4=${gaMeasurementId || 'disabled'}`);
