@@ -14,8 +14,8 @@
     "tag": "Happy Hour",
     "highlights": ["Food specials", "Drink specials", "Bar & patio seating"],
     "description": "Weekday happy hour — food and drink specials Monday through Friday, 4:00 – 7:00 PM. Dine in or grab a seat at the bar.",
-    "metaDescription": "Monday happy hour at Twisted Bar & Grill in The Colony, TX — food and drink specials 4–7 PM near Grandscape.",
-    "hideFromWeeklySchedule": true
+    "weeklyBlurb": "Food and drink specials at the bar and patio.",
+    "metaDescription": "Monday happy hour at Twisted Bar & Grill in The Colony, TX — food and drink specials 4–7 PM near Grandscape."
   },
   {
     "slug": "happy-hour-tuesday",
@@ -32,8 +32,8 @@
     "tag": "Happy Hour",
     "highlights": ["Food specials", "Drink specials", "Midweek unwind"],
     "description": "Weekday happy hour — food and drink specials Monday through Friday, 4:00 – 7:00 PM.",
-    "metaDescription": "Tuesday happy hour at Twisted Bar & Grill in The Colony, TX — food and drink specials 4–7 PM.",
-    "hideFromWeeklySchedule": true
+    "weeklyBlurb": "Food and drink specials at the bar and patio.",
+    "metaDescription": "Tuesday happy hour at Twisted Bar & Grill in The Colony, TX — food and drink specials 4–7 PM."
   },
   {
     "slug": "karaoke-night",
@@ -41,7 +41,7 @@
     "pageTitle": "Karaoke Night",
     "badge": "Every Wednesday",
     "scheduleDay": "Wednesday",
-    "presenter": "Hosted by Chynamanmusic · #SingYourHeartOut",
+    "presenter": "Weekly karaoke at Twisted · #SingYourHeartOut",
     "when": "Every Wednesday",
     "time": "9:00 PM – 2:00 AM",
     "timeLabel": "Event",
@@ -50,17 +50,17 @@
     "imageAlt": "Karaoke Night every Wednesday at Twisted Bar and Grill",
     "tag": "Karaoke",
     "highlights": ["Music & karaoke", "Food & drinks", "Hookah", "Free entry & parking"],
-    "description": "It's a karaoke night every Wednesday — sing your heart out with music, food, drinks, and hookah. Hosted by Chynamanmusic.",
-    "weeklyBlurb": "Sing your heart out with music, food, drinks, and hookah — hosted by Chynamanmusic.",
-    "metaDescription": "Karaoke Night every Wednesday at Twisted Bar & Grill in The Colony, TX — 9 PM to 2 AM, hosted by Chynamanmusic. Free entry, full bar, hookah lounge.",
+    "description": "It's a karaoke night every Wednesday — sing your heart out with music, food, drinks, and hookah.",
+    "weeklyBlurb": "Sing your heart out with music, food, drinks, and hookah.",
+    "metaDescription": "Karaoke Night every Wednesday at Twisted Bar & Grill in The Colony, TX — 9 PM to 2 AM. Free entry, full bar, hookah lounge.",
     "featuredOnListing": true,
     "landingPage": true,
     "heroTagline": "Sing Your Heart Out",
-    "landingIntro": "Twisted turns up every Wednesday with karaoke hosted by Chynamanmusic — grab the mic, order drinks, and make midweek your favorite night of the week.",
+    "landingIntro": "Twisted turns up every Wednesday with karaoke — grab the mic, order drinks, and make midweek your favorite night of the week.",
     "landingFeatures": [
       {
-        "title": "Hosted by Chynamanmusic",
-        "description": "Professional karaoke hosting every Wednesday — all skill levels welcome. #SingYourHeartOut"
+        "title": "Take the Mic",
+        "description": "Live karaoke every Wednesday — all skill levels welcome. #SingYourHeartOut"
       },
       {
         "title": "Happy Hour First",
@@ -77,7 +77,7 @@
     ],
     "scheduleSteps": [
       { "time": "4:00 – 7:00 PM", "label": "Happy Hour", "detail": "Food & drink specials at the bar and patio" },
-      { "time": "9:00 PM – 2:00 AM", "label": "Karaoke Night", "detail": "Live hosting by Chynamanmusic — take the mic" }
+      { "time": "9:00 PM – 2:00 AM", "label": "Karaoke Night", "detail": "Take the mic — music, drinks, and hookah until close" }
     ]
   },
   {
@@ -97,7 +97,30 @@
     "highlights": ["Live DJ & music", "Drink specials", "175″ LED wall", "Hookah & HiFi audio"],
     "description": "Our weekly Thursday night with live DJ, drink specials, and the Ladies Lounge experience from 8 PM onwards.",
     "weeklyBlurb": "Live DJ, drink specials, and the Ladies Lounge experience — powered by S&W Productions.",
-    "metaDescription": "Ladies Lounge every Thursday at Twisted Bar & Grill in The Colony, TX — live DJ, drink specials, and happy hour 4–7 PM."
+    "metaDescription": "Ladies Lounge every Thursday at Twisted Bar & Grill in The Colony, TX — live DJ, drink specials, and happy hour 4–7 PM.",
+    "landingIntro": "Twisted's Thursday night is built for the ladies — eat, sip, dance, and connect with live DJ sets, drink specials, and premium lounge vibes powered by S&W Productions.",
+    "landingFeatures": [
+      {
+        "title": "Live DJ & Dance Floor",
+        "description": "High-energy sets and room to move — Thursday nights hit different on our dance floor."
+      },
+      {
+        "title": "Drink Specials",
+        "description": "Weekly specials on cocktails and pours all night — start with happy hour from 4–7 PM."
+      },
+      {
+        "title": "175″ LED Wall",
+        "description": "Immersive visuals on our giant LED wall paired with a HiFi audio system."
+      },
+      {
+        "title": "Hookah & Lounge Seating",
+        "description": "Premium hookah and upscale lounge seating — settle in with your crew for the night."
+      }
+    ],
+    "scheduleSteps": [
+      { "time": "4:00 – 7:00 PM", "label": "Happy Hour", "detail": "Food and drink specials at the bar and patio" },
+      { "time": "8:00 PM onwards", "label": "Ladies Lounge", "detail": "Live DJ, drink specials, and dance floor energy" }
+    ]
   },
   {
     "slug": "friday-nights",
@@ -117,7 +140,30 @@
     "description": "Live band, DJ, premium hookah, and late-night energy on the patio and in the lounge.",
     "weeklyBlurb": "Live band, DJ, premium hookah, and late-night patio vibes.",
     "metaDescription": "Friday Nights at Twisted Bar & Grill in The Colony, TX — live band, DJ, premium hookah, 9 PM – 2 AM.",
-    "featuredOnListing": true
+    "featuredOnListing": true,
+    "landingIntro": "Friday nights at Twisted bring live bands, DJs, premium hookah, and late-night kitchen service — open until 2 AM with patio and lounge energy all night.",
+    "landingFeatures": [
+      {
+        "title": "Live Band & DJ",
+        "description": "Live performances and DJ sets keep the room moving from 9 PM to close."
+      },
+      {
+        "title": "Premium Hookah",
+        "description": "Upscale lounge seating with premium hookah — ask your server for flavors."
+      },
+      {
+        "title": "Late-Night Kitchen",
+        "description": "Fire-grilled plates served until 1:30 AM — eat, drink, and stay out late."
+      },
+      {
+        "title": "Free Entry & Parking",
+        "description": "No cover charge with plenty of parking at Cascades Court."
+      }
+    ],
+    "scheduleSteps": [
+      { "time": "9:00 PM – 2:00 AM", "label": "Friday Night", "detail": "Live band, DJ, hookah, and full bar" },
+      { "time": "Until 1:30 AM", "label": "Kitchen", "detail": "Late-night food from our grill" }
+    ]
   },
   {
     "slug": "rnb-brunch",
@@ -137,7 +183,30 @@
     "description": "Saturday R&B brunch with great food, drinks, and afternoon energy — live music takes over Saturday night.",
     "weeklyBlurb": "R&B brunch with great food, drinks, and afternoon energy.",
     "metaDescription": "R&B Brunch every Saturday 11 AM – 4 PM at Twisted Bar & Grill in The Colony, TX near Grandscape.",
-    "featuredOnListing": true
+    "featuredOnListing": true,
+    "landingIntro": "Slow down Saturday with R&B brunch at Twisted — brunch plates, cocktails, and afternoon vibes on the patio or indoors, with live music taking over Saturday night.",
+    "landingFeatures": [
+      {
+        "title": "R&B Vibes",
+        "description": "Relaxed R&B soundtrack and Saturday afternoon energy in the lounge and on the patio."
+      },
+      {
+        "title": "Brunch Plates",
+        "description": "Fan-favorite brunch dishes from our kitchen — burgers, wings, tacos, and more."
+      },
+      {
+        "title": "Cocktails & Mimosas",
+        "description": "Full bar with handcrafted cocktails and brunch pours."
+      },
+      {
+        "title": "Saturday Night Live Music",
+        "description": "Stick around after brunch — live music takes over Saturday evening."
+      }
+    ],
+    "scheduleSteps": [
+      { "time": "11:00 AM – 4:00 PM", "label": "R&B Brunch", "detail": "Brunch plates, cocktails, and patio seating" },
+      { "time": "Evening", "label": "Live Music", "detail": "Saturday night performances in the lounge" }
+    ]
   },
   {
     "slug": "paint-and-sip-brunch",
@@ -156,6 +225,28 @@
     "description": "Unwind on Sunday with brunch, cocktails, and a paint-and-sip experience — a relaxed way to close out the weekend.",
     "weeklyBlurb": "Brunch, cocktails, and a paint-and-sip experience.",
     "metaDescription": "Paint & Sip Brunch every Sunday 11 AM – 4 PM at Twisted Bar & Grill in The Colony, TX.",
-    "featuredOnListing": true
+    "featuredOnListing": true,
+    "landingIntro": "Close out the weekend with Paint & Sip Brunch at Twisted — creative fun, brunch favorites, and cocktails in a relaxed Sunday atmosphere.",
+    "landingFeatures": [
+      {
+        "title": "Paint & Sip",
+        "description": "Guided paint-and-sip experience — unwind with a brush in one hand and a cocktail in the other."
+      },
+      {
+        "title": "Sunday Brunch",
+        "description": "Brunch plates from our kitchen served 11 AM – 4 PM."
+      },
+      {
+        "title": "Cocktails & Mimosas",
+        "description": "Full bar with brunch cocktails and specialty pours."
+      },
+      {
+        "title": "Patio & Indoor Seating",
+        "description": "Covered patio and open-air courtyard — pick your spot and stay awhile."
+      }
+    ],
+    "scheduleSteps": [
+      { "time": "11:00 AM – 4:00 PM", "label": "Paint & Sip Brunch", "detail": "Brunch, cocktails, and creative paint-and-sip" }
+    ]
   }
 ]

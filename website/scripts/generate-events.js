@@ -57,10 +57,142 @@ function highlightsBlock(event) {
             </div>`;
 }
 
+function landingFeaturesTitle(event) {
+  if (event.scheduleDay) return `Your ${event.scheduleDay} at Twisted`;
+  return 'What Makes This Event Special';
+}
+
+function featuresFromEvent(event) {
+  return event.landingFeatures || [];
+}
+
+function scheduleFromEvent(event) {
+  if (event.scheduleSteps?.length) return event.scheduleSteps;
+
+  const steps = [];
+  if (event.extraDetail) {
+    steps.push({
+      time: event.extraDetail.value,
+      label: event.extraDetail.label,
+      detail: '',
+    });
+  }
+  steps.push({
+    time: event.time,
+    label: event.timeLabel || 'Event',
+    detail: event.presenter,
+  });
+  return steps;
+}
+
+function introSection(event) {
+  if (!event.landingIntro || event.landingIntro === event.description) return '';
+
+  return `<section class="event-landing-intro">
+    <div class="container">
+      <p class="event-landing-intro-text">${esc(event.landingIntro)}</p>
+    </div>
+  </section>`;
+}
+
+function featuresSection(event) {
+  const features = featuresFromEvent(event);
+  if (!features.length) return '';
+
+  const cards = features
+    .map((feature) => {
+      const copy = feature.description
+        ? `<p>${esc(feature.description)}</p>`
+        : '';
+      return `<div class="event-landing-feature">
+            <h3>${esc(feature.title)}</h3>
+            ${copy}
+          </div>`;
+    })
+    .join('\n          ');
+
+  return `<section class="event-landing-section event-landing-section--alt">
+    <div class="container">
+      <p class="section-label">What to Expect</p>
+      <h2 class="section-title">${esc(landingFeaturesTitle(event))}</h2>
+      <div class="event-landing-features">
+          ${cards}
+      </div>
+    </div>
+  </section>`;
+}
+
+function scheduleSection(event) {
+  const steps = scheduleFromEvent(event);
+  if (!steps.length) return '';
+
+  const items = steps
+    .map(
+      (step) => `<div class="event-landing-step">
+            <div class="event-landing-step-time">${esc(step.time)}</div>
+            <div class="event-landing-step-body">
+              <strong>${esc(step.label)}</strong>
+              ${step.detail ? `<p>${esc(step.detail)}</p>` : ''}
+            </div>
+          </div>`
+    )
+    .join('\n          ');
+
+  return `<section class="event-landing-section">
+    <div class="container">
+      <p class="section-label">Schedule</p>
+      <h2 class="section-title">Plan Your ${esc(event.scheduleDay || 'Visit')}</h2>
+      <div class="event-landing-schedule">
+          ${items}
+      </div>
+    </div>
+  </section>`;
+}
+
+function relatedEventsSection(event) {
+  const related = events.filter(
+    (item) => item.slug !== event.slug && !item.hideFromWeeklySchedule
+  );
+  if (!related.length) return '';
+
+  const items = related
+    .map(
+      (item) =>
+        `<li><a href="/events/${item.slug}"><span class="event-day">${esc(item.scheduleDay.slice(0, 3))}</span> ${esc(item.pageTitle)}</a></li>`
+    )
+    .join('\n            ');
+
+  return `<section class="event-landing-related">
+    <div class="container event-related">
+      <p class="section-label">More Weekly Events</p>
+      <h2 class="section-title">Something Else This Week</h2>
+      <ul class="event-related-list">
+            ${items}
+      </ul>
+    </div>
+  </section>`;
+}
+
+function ctaSection(event) {
+  return `<section class="event-landing-cta">
+    <div class="container event-landing-cta-inner">
+      <div>
+        <h2 class="section-title">Ready for ${esc(event.title)}?</h2>
+        <p class="event-landing-cta-desc">${esc(event.weeklyBlurb || event.description)}</p>
+      </div>
+      <div class="event-landing-cta-actions">
+        <a href="tel:+12144077587" class="btn btn-primary">Call to Reserve</a>
+        <a href="/events" class="btn btn-outline">All Weekly Events</a>
+      </div>
+    </div>
+  </section>`;
+}
+
 function renderTeaserMain(event) {
   const tagline = event.heroTagline
     ? `<p class="event-teaser-tagline">${esc(event.heroTagline)}</p>`
     : `<p class="event-teaser-subtitle">${esc(event.presenter)}</p>`;
+  const posterClass = event.image ? ' event-teaser-showcase--poster' : '';
 
   return `<section class="events-hero event-landing-header">
     <div class="container">
@@ -76,7 +208,7 @@ function renderTeaserMain(event) {
 
   <section class="event-teaser-wrap">
     <div class="container">
-      <article class="event-showcase event-teaser-showcase">
+      <article class="event-showcase event-teaser-showcase${posterClass}">
         ${imageBlock(event)}
         <div class="event-showcase-body">
           <span class="event-showcase-badge">${esc(event.badge)}</span>
@@ -94,7 +226,12 @@ function renderTeaserMain(event) {
         </div>
       </article>
     </div>
-  </section>`;
+  </section>
+  ${introSection(event)}
+  ${featuresSection(event)}
+  ${scheduleSection(event)}
+  ${relatedEventsSection(event)}
+  ${ctaSection(event)}`;
 }
 
 function renderListingCard(event) {
@@ -118,10 +255,9 @@ function renderListingCard(event) {
 }
 
 function renderWeeklyCard(event) {
-  const featured = event.featuredOnListing ? ' featured' : '';
   const blurb = event.weeklyBlurb || event.presenter;
 
-  return `<div class="event-card${featured}">
+  return `<div class="event-card">
           <div class="event-card-day">
             <div class="day-name">${esc(event.scheduleDay)}</div>
           </div>
