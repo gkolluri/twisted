@@ -36,6 +36,27 @@ function ogImage(event) {
   return '{{SITE_URL}}/images/hero-patio.png';
 }
 
+function detailsList(event) {
+  const items = [
+    `<li><strong>When</strong>${esc(event.when)}</li>`,
+    `<li><strong>${esc(event.timeLabel)}</strong>${esc(event.time)}</li>`,
+  ];
+  if (event.extraDetail) {
+    items.push(`<li><strong>${esc(event.extraDetail.label)}</strong>${esc(event.extraDetail.value)}</li>`);
+  }
+  return items.join('\n              ');
+}
+
+function highlightsBlock(event) {
+  if (!event.highlights?.length) return '';
+  const tags = event.highlights
+    .map((h) => `<span class="event-highlight-tag">${esc(h)}</span>`)
+    .join('\n              ');
+  return `<div class="event-showcase-highlights">
+              ${tags}
+            </div>`;
+}
+
 function renderTeaserMain(event) {
   const tagline = event.heroTagline
     ? `<p class="event-teaser-tagline">${esc(event.heroTagline)}</p>`
@@ -61,8 +82,12 @@ function renderTeaserMain(event) {
           <span class="event-showcase-badge">${esc(event.badge)}</span>
           <h1>${esc(event.title)}</h1>
           ${tagline}
-          <p class="event-teaser-summary">${esc(event.when)} · ${esc(event.time)}</p>
-          <div class="event-detail-actions">
+          <ul class="event-showcase-details">
+              ${detailsList(event)}
+            </ul>
+          ${highlightsBlock(event)}
+          <p class="event-detail-desc">${esc(event.description)}</p>
+          <div class="event-detail-actions event-detail-actions--compact">
             <a href="tel:+12144077587" class="btn btn-primary">Call to Reserve</a>
             <a href="/events" class="btn btn-outline">All Weekly Events</a>
           </div>
@@ -92,21 +117,17 @@ function renderListingCard(event) {
         </article>`;
 }
 
-function dayShort(scheduleDay) {
-  return scheduleDay.slice(0, 3);
-}
-
 function renderWeeklyCard(event) {
   const featured = event.featuredOnListing ? ' featured' : '';
+  const blurb = event.weeklyBlurb || event.presenter;
 
   return `<div class="event-card${featured}">
           <div class="event-card-day">
             <div class="day-name">${esc(event.scheduleDay)}</div>
-            <div class="day-short">${esc(dayShort(event.scheduleDay))}</div>
           </div>
           <div class="event-card-body">
             <h3><a href="/events/${event.slug}" class="event-card-title-link">${esc(event.title)}</a></h3>
-            <p>${esc(event.description)}</p>
+            <p>${esc(blurb)}</p>
           </div>
           <div class="event-card-meta">
             <div class="time">${esc(event.time)}</div>
@@ -116,7 +137,10 @@ function renderWeeklyCard(event) {
 }
 
 function renderWeeklySchedule() {
-  return events.map(renderWeeklyCard).join('\n\n        ');
+  return events
+    .filter((event) => !event.hideFromWeeklySchedule)
+    .map(renderWeeklyCard)
+    .join('\n\n        ');
 }
 
 function renderFeaturedGrid() {

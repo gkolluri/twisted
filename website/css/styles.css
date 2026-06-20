@@ -587,6 +587,18 @@ section {
   gap: 1.25rem;
 }
 
+.weekly-schedule-note {
+  color: var(--accent-light);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: -0.25rem 0 1.75rem;
+  padding: 0.85rem 1.1rem;
+  background: rgba(232, 82, 26, 0.08);
+  border: 1px solid rgba(232, 82, 26, 0.22);
+  border-radius: var(--radius);
+  max-width: 640px;
+}
+
 .event-card {
   display: grid;
   grid-template-columns: 120px 1fr auto;
@@ -958,6 +970,37 @@ section {
 
 .event-teaser-showcase .event-showcase-image img {
   object-fit: cover;
+}
+
+.event-teaser-page .event-showcase-body .event-showcase-details {
+  margin-top: 0.5rem;
+}
+
+.event-teaser-page .event-showcase-body .event-showcase-highlights {
+  margin-bottom: 1rem;
+}
+
+.event-teaser-page .event-detail-desc {
+  margin-bottom: 1.25rem;
+}
+
+.event-detail-actions--compact,
+.event-teaser-page .event-detail-actions {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: auto;
+  max-width: none;
+  gap: 0.5rem;
+}
+
+.event-detail-actions--compact .btn,
+.event-teaser-page .event-detail-actions .btn {
+  width: auto;
+  min-height: 34px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 .event-landing-intro {
