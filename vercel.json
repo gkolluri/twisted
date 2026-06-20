@@ -5,6 +5,12 @@
   "outputDirectory": "website/public",
   "cleanUrls": true,
   "trailingSlash": false,
+  "build": {
+    "env": {
+      "SITE_URL": "https://twisteddfw.com",
+      "GA_MEASUREMENT_ID": "G-WXJQXBRBKB"
+    }
+  },
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/menu.html", "destination": "/menu", "permanent": true },

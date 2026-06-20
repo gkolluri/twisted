@@ -66,9 +66,10 @@ function resolveFile(urlPath) {
 
 function runBuild() {
   return new Promise((resolve, reject) => {
-    const child = spawn(process.execPath, [path.join(__dirname, 'prepare.js')], {
+    const child = spawn('npm', ['run', 'build'], {
       cwd: root,
       stdio: 'inherit',
+      shell: true,
       env: process.env,
     });
     child.on('exit', (code) => (code === 0 ? resolve() : reject(new Error(`build failed (${code})`))));

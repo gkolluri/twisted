@@ -1,6 +1,6 @@
 id,question,question_te,answer,answer_te,category
-faq_000,Are you open today?,Are you open today?,Use Right now (auto) in MASTER DATA. We open daily at 11 AM; bar open late (around 2 AM). Do not list full week unless asked.,Use Right now in MASTER DATA.,hours
-faq_001,What are your hours?,What are your hours?,"Open daily 11:00 AM – 2:00 AM. Kitchen serves lunch through late evening; full bar and late-night vibe on weekends.",Daily 11 AM to 2 AM.,hours
+faq_000,Are you open today?,Are you open today?,Use Right now (auto) in MASTER DATA. Mon–Fri open 4 PM; Sat–Sun open 11 AM; all days until 2 AM. Do not list full week unless asked.,Use Right now in MASTER DATA.,hours
+faq_001,What are your hours?,What are your hours?,"Monday–Friday 4:00 PM – 2:00 AM. Saturday–Sunday 11:00 AM – 2:00 AM. Happy hour Mon–Thu 4–7 PM.",Mon–Fri 4 PM–2 AM; weekends 11 AM–2 AM.,hours
 faq_002,Where are you located?,Where are you located?,"6520 Cascades Court #200, The Colony, TX 75056 — Cascades at The Colony, near Grandscape and Topgolf.",The Colony — Cascades Court near Grandscape.,location
 faq_003,Do you offer delivery or takeout?,Do you offer delivery or takeout?,Yes — order delivery or pickup on Uber Eats. Dine-in and patio seating available.,Uber Eats delivery and pickup; dine-in yes.,other
 faq_004,Do you have a full bar?,Full bar?,"Yes — full bar with craft cocktails, beer, wine, and specialty drinks.",Full bar yes.,other

@@ -20,5 +20,5 @@ tax_rate_percent,8.25
 default_pickup_eta_mins,30
 timezone,America/Chicago
 menu_price_source,"Public menu snapshot (menu-world.com / Uber Eats) — confirm rare items with kitchen before quoting"
-kitchen_hours,"Daily 11:00 AM – late (kitchen closes before bar; bar open until ~2:00 AM)"
-bar_hours,"Daily 11:00 AM – 2:00 AM"
+kitchen_hours,"Mon–Fri from 4:00 PM; Sat–Sun from 11:00 AM — kitchen closes before bar (bar until 2:00 AM)"
+bar_hours,"Mon–Fri 4:00 PM – 2:00 AM; Sat–Sun 11:00 AM – 2:00 AM"

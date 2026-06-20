@@ -1,2 +1,5 @@
 .vercel
 website/public
+website/events-featured-grid.html
+website/events-weekly-schedule.html
+website/events/*.html

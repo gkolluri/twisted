@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Twisted Bar & Grill | Sports Bar in The Colony, TX near Grandscape</title>
-  <meta name="description" content="Twisted Bar & Grill in The Colony, TX — American sports bar with full bar, patio, weekend brunch, live music, and game-day atmosphere near Grandscape and Topgolf. Open daily 11 AM – 2 AM.">
+  <meta name="description" content="Twisted Bar & Grill in The Colony, TX — American sports bar with full bar, patio, weekend brunch, live music, and game-day atmosphere near Grandscape and Topgolf. Mon–Fri 4 PM – 2 AM, weekends 11 AM – 2 AM.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#111114">
   <meta name="author" content="Twisted Bar & Grill">
@@ -17,7 +17,7 @@
   <meta property="og:site_name" content="Twisted Bar & Grill">
   <meta property="og:url" content="{{SITE_URL}}/">
   <meta property="og:title" content="Twisted Bar & Grill | Sports Bar in The Colony, TX">
-  <meta property="og:description" content="American sports bar and grill with full bar, hookah, patio, weekend brunch, and live entertainment near Grandscape. Open daily 11 AM – 2 AM.">
+  <meta property="og:description" content="American sports bar and grill with full bar, hookah, patio, weekend brunch, and live entertainment near Grandscape. Mon–Fri 4 PM – 2 AM, weekends 11 AM – 2 AM.">
   <meta property="og:image" content="{{SITE_URL}}/images/hero-patio.png">
   <meta property="og:image:secure_url" content="{{SITE_URL}}/images/hero-patio.png">
   <meta property="og:image:width" content="1024">
@@ -34,7 +34,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:ital@1&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 
   <script type="application/ld+json">
@@ -73,7 +73,13 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "16:00",
+        "closes": "02:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
         "opens": "11:00",
         "closes": "02:00"
       }
@@ -101,7 +107,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="logo" aria-label="Twisted Bar & Grill">
-        <img src="images/logo-header.png" alt="Twisted Bar & Grill" class="logo-img">
+        <img src="/images/logo-header.png" alt="Twisted Bar & Grill" class="logo-img">
       </a>
       <nav aria-label="Main navigation">
       <button class="nav-toggle" aria-label="Toggle navigation">
@@ -125,12 +131,15 @@
       <div class="hero-overlay"></div>
     </div>
     <div class="container hero-content">
-      <span class="hero-tag">The Colony · DFW</span>
-      <h1>Great Food. <em>Big Games.</em></h1>
-      <p>American sports bar and grill with a full menu, patio seating, weekend brunch, and live entertainment — right in the heart of Cascades near Grandscape.</p>
+      <h1>
+        <span class="hero-line">Eat. Drink.</span>
+        <span class="hero-line hero-line--accent">Feel the Beat.</span>
+      </h1>
+      <p class="hero-tagline">One place, every experience.</p>
+      <p class="hero-desc">DFW's most electrifying bar &amp; grill — <strong>handcrafted cocktails, draft beers on tap, fire-grilled plates</strong>, and premium upscale lounge seating. Hookah. Live bands &amp; DJs. Weekend brunch. Covered patio and open-air courtyard. Right by Grandscape.</p>
       <div class="hero-actions">
-        <a href="tel:+12144077587" class="btn btn-primary">Call Us</a>
-        <a href="/events" class="btn btn-outline">This Week's Events</a>
+        <a href="/events" class="btn btn-hero-primary">See Weekly Events</a>
+        <a href="tel:+12144077587" class="btn btn-hero">Call Us</a>
       </div>
     </div>
   </section>
@@ -138,154 +147,44 @@
   <section id="about">
     <div class="container">
       <p class="section-label">About Us</p>
-      <h2 class="section-title">More Than a Sports Bar</h2>
-      <p class="section-subtitle">Twisted Potato, wings with our house Indian dry rub, steak tacos, full bar, and a welcoming spot for game days, dinners out, and weekly events — open until 2 AM.</p>
+      <h2 class="section-title">More Than a Bar. An Entertainment Destination</h2>
+      <p class="section-subtitle">Twisted is where The Colony comes together — trivia nights, live performances, themed parties, and community celebrations from open to close. Walk in with your crew, book a private event, or settle in for the evening. Open until 2 AM every night.</p>
 
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon">🍺</div>
-          <h3>Full Bar</h3>
-          <p>Craft cocktails, beer, wine, and specialty drinks from our full bar.</p>
+          <div class="feature-icon">🍸</div>
+          <h3>Handcrafted Cocktails</h3>
+          <p>Signature cocktails, draft beers on tap, wine, and specialty pours from our full bar.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">💨</div>
-          <h3>Lounge Experience</h3>
-          <p>Premium hookah available on-site — ask your server for flavors and pricing.</p>
+          <h3>Hookah Lounge</h3>
+          <p>Upscale lounge seating and premium hookah — ask your server for flavors and pricing.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">📺</div>
-          <h3>Game Day Ready</h3>
-          <p>Multiple TVs across the bar. Ask staff to switch channels for the big game.</p>
+          <h3>Sports Bar</h3>
+          <p>175″ LED wall, 150″ screen, and large TVs in every corner — all paired with a hi-fi audio system for game day and live events.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔥</div>
+          <h3>Fire-Grilled Plates</h3>
+          <p>Burgers, wings, tacos, and fan favorites from our kitchen — cooked to order and served hot.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🌿</div>
-          <h3>Patio Seating</h3>
-          <p>Outdoor seating available weather permitting — dine under the Texas sky.</p>
+          <h3>Patio &amp; Courtyard</h3>
+          <p>Covered patio and open-air courtyard seating — brunch, dinner, or drinks under the Texas sky.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🎵</div>
-          <h3>Live Entertainment</h3>
-          <p>Live bands, DJs, trivia, and themed nights every week.</p>
+          <h3>Live Music</h3>
+          <p>Live music every Friday and Saturday night — feel the beat at Twisted.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🍽️</div>
-          <h3>Walk-Ins Welcome</h3>
-          <p>Dine-in and patio seating available — no reservation needed for most nights.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="highlights">
-    <div class="container">
-      <p class="section-label">Fan Favorites</p>
-      <h2 class="section-title">Menu Highlights</h2>
-      <p class="section-subtitle">The dishes our regulars can't stop talking about.</p>
-
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <h3>Twisted Potato</h3>
-            <p>Crispy fried ribbon potato with seasoned salt</p>
-          </div>
-          <span class="menu-item-price">$10.00</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <h3>House Special Wings</h3>
-            <p>Our signature Indian dry rub</p>
-          </div>
-          <span class="menu-item-price">$15.00</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <h3>Steak Tacos (3)</h3>
-            <p>Grilled steak with onion and cilantro</p>
-          </div>
-          <span class="menu-item-price">$12.00</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <h3>Angus Beef Burger</h3>
-            <p>Fresh beef patty with cheese, lettuce, tomato, onion, pickle</p>
-          </div>
-          <span class="menu-item-price">$16.00</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <h3>Nashville Chicken Sandwich</h3>
-            <p>Spicy Nashville-style chicken sandwich</p>
-          </div>
-          <span class="menu-item-price">$16.00</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <h3>Steak Loaded Nacho</h3>
-            <p>Grilled ribeye, corn chips, beans, pico, queso, sour cream, jalapeños</p>
-          </div>
-          <span class="menu-item-price">$14.00</span>
-        </div>
-      </div>
-
-      <div style="margin-top: 2rem; text-align: center;">
-        <a href="/menu" class="btn btn-outline">View Full Menu</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="events-teaser">
-    <div class="container">
-      <div class="events-teaser">
-        <div class="events-teaser-inner">
-          <div class="events-teaser-text">
-            <p class="section-label">Upcoming Event</p>
-            <h2>Something's Always Happening</h2>
-            <p>From Ladies Lounge every Thursday to birthday bashes and live bands — there's a reason to come back every week.</p>
-
-            <div class="featured-event-teaser">
-              <a href="/events" class="featured-event-teaser-poster">
-                <img src="images/events/ladies-lounge.png" alt="Ladies Lounge every Thursday at Twisted Bar & Grill">
-              </a>
-              <div class="featured-event-teaser-info">
-                <p class="event-date">Every Thursday · June 18 · 7 PM – 2 AM</p>
-                <h3>Ladies Lounge</h3>
-                <p>Weekly Thursday event with live DJ, drink specials, and happy hour until 9 PM. A great night out with friends.</p>
-                <a href="/events" class="btn btn-primary">See Event Details</a>
-              </div>
-            </div>
-          </div>
-          <ul class="event-preview-list">
-            <li class="event-preview-item">
-              <span class="event-day">Sat</span>
-              <span class="event-name">Weekend Brunch</span>
-              <span class="event-time">11 AM</span>
-            </li>
-            <li class="event-preview-item">
-              <span class="event-day">Sun</span>
-              <span class="event-name">Weekend Brunch</span>
-              <span class="event-time">11 AM</span>
-            </li>
-            <li class="event-preview-item">
-              <span class="event-day">Mon</span>
-              <span class="event-name">Trivia Night</span>
-              <span class="event-time">7 PM</span>
-            </li>
-            <li class="event-preview-item">
-              <span class="event-day">Thu</span>
-              <span class="event-name">Ladies Lounge</span>
-              <span class="event-time">7 PM</span>
-            </li>
-            <li class="event-preview-item">
-              <span class="event-day">Fri</span>
-              <span class="event-name">Live Band</span>
-              <span class="event-time">9 PM</span>
-            </li>
-            <li class="event-preview-item">
-              <span class="event-day">Sat</span>
-              <span class="event-name">Saturday Night DJ</span>
-              <span class="event-time">10 PM</span>
-            </li>
-          </ul>
+          <div class="feature-icon">🥂</div>
+          <h3>Weekend Brunch</h3>
+          <p>Saturday R&amp;B brunch and Sunday paint &amp; sip brunch, both 11 AM – 4 PM.</p>
         </div>
       </div>
     </div>
@@ -319,11 +218,82 @@
     </div>
   </section>
 
+  <section id="events-teaser">
+    <div class="container">
+      <div class="events-teaser">
+        <div class="events-teaser-inner events-teaser-inner--landing">
+          <div class="events-teaser-text">
+            <p class="section-label">Events</p>
+            <h2>Something's Always Happening</h2>
+            <p>Happy hour, karaoke, live music, and weekend brunch — seven days of drinks, food, and good vibes at Twisted near Grandscape.</p>
+            <a href="/events" class="btn btn-primary">See Weekly Events</a>
+          </div>
+          <div class="events-teaser-visual">
+            <img src="/images/events/karaoke-night.png" alt="Karaoke and live events at Twisted Bar and Grill">
+            <img src="/images/events/friday-nights.png" alt="Weekend nights at Twisted Bar and Grill">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="highlights">
+    <div class="container">
+      <p class="section-label">Fan Favorites</p>
+      <h2 class="section-title">Menu Highlights</h2>
+      <p class="section-subtitle">The dishes our regulars can't stop talking about.</p>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <h3>Twisted Potato</h3>
+            <p>Crispy fried ribbon potato with seasoned salt</p>
+          </div>
+                  </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <h3>House Special Wings</h3>
+            <p>Our signature Indian dry rub</p>
+          </div>
+                  </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <h3>Steak Tacos (3)</h3>
+            <p>Grilled steak with onion and cilantro</p>
+          </div>
+                  </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <h3>Angus Beef Burger</h3>
+            <p>Fresh beef patty with cheese, lettuce, tomato, onion, pickle</p>
+          </div>
+                  </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <h3>Nashville Chicken Sandwich</h3>
+            <p>Spicy Nashville-style chicken sandwich</p>
+          </div>
+                  </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <h3>Steak Loaded Nacho</h3>
+            <p>Grilled ribeye, corn chips, beans, pico, queso, sour cream, jalapeños</p>
+          </div>
+                  </div>
+      </div>
+
+      <div class="menu-section-cta">
+        <p class="menu-note">Prices may vary. Please check with the restaurant for current pricing.</p>
+        <a href="/menu" class="btn btn-outline">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
   <section id="visit">
     <div class="container">
       <p class="section-label">Find Us</p>
       <h2 class="section-title">Visit Twisted</h2>
-      <p class="section-subtitle">Open daily from 11 AM to 2 AM. Walk-ins welcome — call for large groups and private events.</p>
+      <p class="section-subtitle">Monday–Friday 4 PM – 2 AM · Saturday &amp; Sunday 11 AM – 2 AM. Walk-ins welcome — call for large groups and private events.</p>
 
       <div class="info-grid">
         <div class="info-card">
@@ -349,9 +319,10 @@
         <div class="info-card">
           <h3>Hours</h3>
           <ul class="hours-list">
-            <li><span>Every Day</span><span>11 AM – 2 AM</span></li>
+            <li><span>Monday – Friday</span><span>4 PM – 2 AM</span></li>
+            <li><span>Saturday – Sunday</span><span>11 AM – 2 AM</span></li>
           </ul>
-          <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-dim);">Kitchen serves lunch through late evening</p>
+          <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-dim);">Weekend brunch Sat &amp; Sun · Happy hour Mon–Thu 4–7 PM</p>
         </div>
       </div>
 
@@ -385,6 +356,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>
