@@ -6,14 +6,28 @@
 const fs = require('fs');
 const path = require('path');
 
-const siteUrl = (
-  process.env.SITE_URL ||
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : 'https://twisteddfw.com')
-).replace(/\/$/, '');
+const siteUrl = (() => {
+  const trim = (url) => url.replace(/\/$/, '');
+
+  // Preview and branch deploys: always use the live deployment URL for OG/canonical.
+  if (process.env.VERCEL_ENV && process.env.VERCEL_ENV !== 'production' && process.env.VERCEL_URL) {
+    return trim(`https://${process.env.VERCEL_URL}`);
+  }
+
+  if (process.env.SITE_URL) {
+    return trim(process.env.SITE_URL);
+  }
+
+  if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
+    return trim(`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`);
+  }
+
+  if (process.env.VERCEL_URL) {
+    return trim(`https://${process.env.VERCEL_URL}`);
+  }
+
+  return 'https://twisteddfw.com';
+})();
 
 const root = path.join(__dirname, '..');
 const outDir = path.join(root, 'public');
