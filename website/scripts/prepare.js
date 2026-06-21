@@ -1,39 +1,21 @@
 #!/usr/bin/env node
 /**
  * Builds static site into public/ with SITE_URL injected.
- * Vercel sets VERCEL_URL; set SITE_URL=https://twisteddfw.com once the custom domain is live.
+ * Default public URL: https://twisted-liart.vercel.app (set in vercel.json).
+ * When twisteddfw.com is live with SSL, set SITE_URL=https://twisteddfw.com in Vercel Production only.
  */
 const fs = require('fs');
 const path = require('path');
 
+const DEFAULT_PUBLIC_URL = 'https://twisted-liart.vercel.app';
+
 const trimUrl = (url) => url.replace(/\/$/, '');
 
-const deploymentUrl = process.env.VERCEL_URL
-  ? trimUrl(`https://${process.env.VERCEL_URL}`)
-  : null;
-
 const siteUrl = (() => {
-  if (process.env.SITE_URL) return trimUrl(process.env.SITE_URL);
-
-  if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
-    return trimUrl(`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`);
-  }
-
-  if (deploymentUrl) return deploymentUrl;
-
-  return 'https://twisteddfw.com';
-})();
-
-const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL
-  ? trimUrl(`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`)
-  : null;
-
-// Social crawlers must fetch images from a live host at build time.
-const ogUrl = (() => {
-  if (!deploymentUrl) return siteUrl;
-  if (siteUrl === deploymentUrl) return siteUrl;
-  if (productionHost && siteUrl === productionHost) return siteUrl;
-  return deploymentUrl;
+  const env = process.env.SITE_URL ? trimUrl(process.env.SITE_URL) : DEFAULT_PUBLIC_URL;
+  // Custom domain not live yet — keep all public URLs on the stable Vercel alias.
+  if (env.includes('twisteddfw.com')) return DEFAULT_PUBLIC_URL;
+  return env;
 })();
 
 const root = path.join(__dirname, '..');
@@ -56,13 +38,17 @@ function analyticsSnippet(measurementId) {
 }
 
 function rewriteSocialImageUrls(content) {
-  if (ogUrl === siteUrl) return content;
-
   const escapedSiteUrl = siteUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  return content.replace(
-    new RegExp(`((?:property="og:image(?::secure_url)?"|name="twitter:image") content=")${escapedSiteUrl}(/images/[^"]+)(")`, 'g'),
-    `$1${ogUrl}$2$3`
-  );
+
+  return content
+    .replace(
+      /((?:property="og:image(?::secure_url)?"|name="twitter:image") content=")https:\/\/[^"]*\.vercel\.app(\/images\/[^"]+)(")/gi,
+      `$1${siteUrl}$2$3`
+    )
+    .replace(
+      new RegExp(`((?:property="og:image(?::secure_url)?"|name="twitter:image") content=")${escapedSiteUrl}(/images/[^"]+)(")`, 'g'),
+      `$1${siteUrl}$2$3`
+    );
 }
 
 function injectUrls(content) {
@@ -123,4 +109,4 @@ if (fs.existsSync(outDir)) {
 }
 
 copyDir(root, outDir);
-console.log(`Built public/ with SITE_URL=${siteUrl} OG_URL=${ogUrl} GA4=${gaMeasurementId || 'disabled'}`);
+console.log(`Built public/ with SITE_URL=${siteUrl} GA4=${gaMeasurementId || 'disabled'}`);

@@ -7,6 +7,7 @@
   "trailingSlash": false,
   "build": {
     "env": {
+      "SITE_URL": "https://twisted-liart.vercel.app",
       "GA_MEASUREMENT_ID": "G-WXJQXBRBKB"
     }
   },
