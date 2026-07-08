@@ -14,7 +14,8 @@
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/menu.html", "destination": "/menu", "permanent": true },
-    { "source": "/events.html", "destination": "/events", "permanent": true }
+    { "source": "/events.html", "destination": "/events", "permanent": true },
+    { "source": "/links.html", "destination": "/links", "permanent": true }
   ],
   "headers": [
     {

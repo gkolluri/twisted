@@ -33,6 +33,7 @@ const htmlRedirects = {
   '/index.html': '/',
   '/menu.html': '/menu',
   '/events.html': '/events',
+  '/links.html': '/links',
 };
 
 function resolveFile(urlPath) {
