@@ -26,6 +26,7 @@ const MIME = {
   '.ico': 'image/x-icon',
   '.xml': 'application/xml',
   '.txt': 'text/plain; charset=utf-8',
+  '.pdf': 'application/pdf',
 };
 
 const htmlRedirects = {
