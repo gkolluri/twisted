@@ -8,7 +8,8 @@
   "build": {
     "env": {
       "SITE_URL": "https://twisted-liart.vercel.app",
-      "GA_MEASUREMENT_ID": "G-WXJQXBRBKB"
+      "GA_MEASUREMENT_ID": "G-WXJQXBRBKB",
+      "GOOGLE_DOC_ID": "1Xv98qwrWbPNbITAR8pOItIAXsMW-Ugo1IztD6qUeS48"
     }
   },
   "redirects": [

@@ -1,0 +1,355 @@
+Twisted Bar & Grill — Website CMS
+Edit this document to update the website. Redeploy (or run npm run build) to publish changes.
+
+=== site ===
+name: Twisted Bar & Grill
+phone: (214) 407-7587
+phone_tel: +12144077587
+email: info@twisteddfw.com
+address_line1: 6520 Cascades Court #200
+address_line2: The Colony, TX 75056
+instagram: https://www.instagram.com/twistedbarandgrill.dfw/
+facebook: https://www.facebook.com/twistedbandg/
+google_reviews: https://www.google.com/search?q=twisted+google+colony&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_zwDEKEM5oQpFUA03DZZdPpiaShl6Fmf0pOD3fe1RLmT2QVyLLo3ZB63baHGjHlpDeCzRscPXQQeBDOvTu7vIGgUxDlFcg-IUF26h_rmeLFt_9Iw2g%3D%3D
+hours_weekday: Monday – Friday
+hours_weekday_time: 4 PM – 2 AM
+hours_weekend: Saturday – Sunday
+hours_weekend_time: 11 AM – 2 AM
+hours_note: Weekend brunch Sat & Sun · Happy hour weekdays · 4–7 PM
+
+=== homepage.hero ===
+line1: Eat. Drink.
+line2: Feel the Beat.
+tagline: One place, every experience.
+description: DFW's most electrifying bar & grill — handcrafted cocktails, draft beers on tap, fire-grilled plates, and premium upscale lounge seating. Hookah. Live bands & DJs. Weekend brunch. Covered patio and open-air courtyard. Right by Grandscape.
+cta_primary: See Weekly Events
+cta_secondary: Call Us
+
+=== homepage.about ===
+label: About Us
+title: More Than a Bar. An Entertainment Destination
+subtitle: Twisted is where The Colony comes together — trivia nights, live performances, themed parties, and community celebrations from open to close. Walk in with your crew, book a private event, or settle in for the evening. Open until 2 AM every night.
+features:
+- icon: 🍸 | title: Handcrafted Cocktails | body: Signature cocktails, draft beers on tap, wine, and specialty pours from our full bar.
+- icon: 💨 | title: Hookah Lounge | body: Upscale lounge seating and premium hookah — ask your server for flavors and pricing.
+- icon: 📺 | title: Sports Bar | body: 175″ LED wall, 150″ screen, and large TVs in every corner — all paired with a hi-fi audio system for game day and live events.
+- icon: 🔥 | title: Fire-Grilled Plates | body: Burgers, wings, tacos, and fan favorites from our kitchen — cooked to order and served hot.
+- icon: 🌿 | title: Patio & Courtyard | body: Covered patio and open-air courtyard seating — brunch, dinner, or drinks under the Texas sky.
+- icon: 🎵 | title: Live Music | body: Live music every Friday and Saturday night — feel the beat at Twisted.
+- icon: 🥂 | title: Weekend Brunch | body: Saturday R&B brunch and Sunday paint & sip brunch, both 11 AM – 4 PM.
+
+=== homepage.gallery ===
+space_label: Our Space
+space_title: A Modern Sports Bar in The Colony
+space_body1: Wide-screen TVs, comfortable booths, patio seating, and a full bar — whether you're catching the game or meeting friends for dinner, Twisted has you covered.
+space_body2: Located at Cascades Court near Grandscape and Topgolf — the go-to spot for North Dallas suburbs including Frisco, Lewisville, Plano, and Carrollton.
+bar_label: Full Bar
+bar_title: Cocktails, Craft Beer & Lounge
+bar_body1: Signature cocktails, beer and wine, and premium hookah in a comfortable lounge setting — whether you're here for the game or a night out with friends.
+bar_body2: Ask your server about drink specials and hookah flavors.
+
+=== homepage.events ===
+label: Events
+title: Something's Always Happening
+body: Happy hour, karaoke, live music, and weekend brunch — seven days of drinks, food, and good vibes at Twisted near Grandscape.
+cta: See Weekly Events
+
+=== homepage.menu_highlights ===
+items:
+- title: Twisted Potato | body: Ribbon crispy potato topped with house seasoning salt
+- title: Chicken 65 | body: Fried battered chicken tossed in our house 65 sauce
+- title: Baja Fish Taco | body: Battered Arctic cod with coleslaw & jalapeño ranch
+- title: Angus Beef Burger | body: Fresh beef patty with cheese, LTOP & mayo
+- title: Nashville Chicken Sandwich | body: Fried chicken dipped in Nashville sauce with cheese & mayo
+- title: Loaded Nachos | body: Corn chips, beans, pico, jalapeños, cheese, sour cream & guacamole
+
+=== homepage.reviews ===
+heading: What Our Customers Say
+rating: 4.3
+count: 750+
+reviews:
+- author: Vidya Garapati | date: 2 months ago | stars: 5 | text: Amazing experience! Great ambience, perfect music, and top-notch service. The drinks were spot on, and the food was fresh and delicious. Definitely coming back!
+- author: Megan Mitchell | date: 1 month ago | stars: 5 | text: Perfect spot to unwind with hookah. The energy is lively without being overwhelming, music hits just right, and the staff was cool. A go-to for a chill night out.
+- author: Chaitanya Kumar | date: 1 week ago | stars: 5 | text: The music selection was fantastic and the DJ kept the crowd engaged. The courtyard was my favorite — hookah and cocktails under the trees felt like a resort. Flavorful food and great service.
+- author: Jenu | date: 3 months ago | stars: 4 | text: A great sports bar with an extensive beer selection, solid food menu, and lively atmosphere. Perfect for catching a game and enjoying a cold drink with friends.
+- author: Crystal T. | date: 4 months ago | stars: 5 | text: Overall, 9 out of 10. I will be going back.
+
+=== events.page ===
+label: Weekly Schedule
+title: Events Every Week
+body: Happy hour Monday through Thursday, karaoke, Ladies Lounge, live music, and weekend brunch — something on the calendar every day of the week.
+featured_label: Featured
+featured_title: Weekly Events
+schedule_label: Every Week
+schedule_title: Regular Weekly Schedule
+schedule_note: Happy hour every weekday · 4:00 – 7:00 PM
+private_title: Private Events & Large Parties
+private_body: Planning a birthday, corporate event, or large group? Call us and our team will follow up with details.
+
+=== menu ===
+label: Eat & Drink
+title: Our Menu
+intro: American bar and grill favorites with a twist. Vegetarian and gluten-free options available — ask your server for specifics.
+note: Ask your server for pricing, availability, and dietary details.
+disclaimer: Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions. Our gluten free items are prepared in a common kitchen; exposure to flour is possible. Our gluten free items are not recommended for guests with Celiac or any other gluten sensitive disorder.
+hookah_note: Premium flavors — ask your server for today's selection.
+
+=== menu.section:appetizers ===
+title: Appetizers
+items:
+- title: Twisted Potato | body: Ribbon crispy potato topped with house seasoning salt.
+- title: Chips & Salsa | body: Homemade chips & salsa.
+- title: Chips & Queso | body: Homemade chips & queso.
+- title: Chips & Guacamole | body: Homemade chips & fresh guacamole. Made to order.
+- title: Loaded Nachos | body: Corn chips, beans, pico de gallo, jalapeños, melted cheese, sour cream & guacamole. Chicken, steak, or shrimp available.
+- title: Hummus | body: Mashed chickpeas blended with lemon juice & garlic. Served with warm pita bread & cucumber chips.
+- title: Twisted Heart | body: Giant pretzel served with queso & spicy mustard.
+- title: Falafel | body: Served with pita bread & garlic sauce.
+- title: Mozzarella Sticks | body: Six mozzarella cheese sticks served with marinara sauce.
+- title: Jalapeño Strips | body: Fresh jalapeños hand breaded & fried golden. Served with house ranch.
+- title: Fried Pickles | body: Breaded fried pickles served with creamy Cajun sauce.
+- title: Loaded Tots | body: Crispy tots topped with melted cheese, sour cream, pico de gallo, crispy bacon bits & green onions.
+- title: Flautas | body: Chicken & cheese taquitos topped with salsa verde, sour cream & queso fresco.
+- title: Bang on Shrimp | body: Fried shrimp with a crunch covered in creamy spicy sauce. Topped with sliced jalapeños.
+- title: Samosa | body: Fried pastry stuffed with potatoes, onions & peas. Served with cilantro mint sauce.
+
+=== menu.section:soup-salad ===
+title: Soup & Salad
+note_left: Add salmon, shrimp, steak, or chicken to any salad — ask your server.
+text: Dressings: Ranch, Honey Mustard, Caesar, Blue Cheese, Balsamic Vinaigrette, Thousand Island, Italian
+items:
+- title: Caesar Salad | body: Whole romaine leaves, fresh shaved parmesan, lemon wedge, garlic croutons.
+- title: Cobb Salad | body: Romaine lettuce, boiled egg, bacon, shredded cheese, blue cheese & avocado.
+- title: Nashville Hot Chicken Salad | body: Hand battered fried chicken tossed with hot Nashville sauce.
+- title: Buffalo Chicken Salad | body: Crispy hand-breaded chicken covered in buffalo sauce with pickled onions, tomato & mixed cheese.
+- title: Twisted Garden Salad | body: Mixed greens, red onion, cherry tomato, shredded cheese, carrots, cucumbers & croutons.
+- title: Chicken Tortilla Soup | body: Chicken soup with veggies & beans topped with tortilla, avocado, lime & cilantro.
+
+=== menu.section:wings ===
+title: Wings
+note_heat: Sauce heat: Hot to Mild
+items:
+- title: Twisted Naked Wings | body: Classic naked wings.
+- title: Wish You Were A Wing | body: Boneless breaded wings.
+columns:
+- title: Dry Rub | items: Cajun | Blackened | Lemon Pepper | Caribbean Jerk | Salt & Pepper | Garlic Parmesan
+- title: Wet Sauce | items: Nashville | 65 Sauce | Mango Habanero | Buffalo Hot | Buffalo Medium | Sweet Chili | Buffalo Mild | Buffalo Lemon Pepper | Cajun Ranch | BBQ
+
+=== menu.section:main-entr-es ===
+title: Main Entrées
+items:
+- title: Chicken 65 | body: Fried battered chicken tossed in our house 65 sauce with fresh chilies. Served with flat bread.
+- title: Fish & Chips | body: Two pieces of cod battered fish with tartar sauce. Served with French fries.
+- title: Chicken Tenders & Fries | body: Four all-white chicken strips hand battered & fried. Served with fries & dipping sauce.
+- title: Surf & Turf | body: 10oz ribeye steak topped with grilled shrimp. Served with choice of 2 sides.
+- title: Catfish Plate | body: Fried, blackened, or grilled. Served with choice of 2 sides.
+- title: Grilled Chicken | body: Grilled chicken breast served with choice of 2 sides.
+- title: Grilled Salmon | body: Blackened or grilled salmon with 2 sides & house made tartar sauce.
+- title: Chicken Quesadilla | body: Stuffed with blended cheese & pico de gallo. Steak or shrimp available.
+- title: Veggie Quesadilla | body: Stuffed with cheese, mushrooms, peppers, spinach, onions & pico de gallo.
+
+=== menu.section:sides ===
+title: Sides
+text: Mac & Cheese, Tots, Veggie Mix, Fries, Corn, Green Beans, Mashed Potatoes, Onion Rings, Fried Okra, Side Salad, Pita Bread
+
+=== menu.section:handhelds ===
+title: Handhelds
+note_left: Sandwiches served with french fries. Sub tots or onion rings, or gluten-free bun — ask your server.
+items:
+- title: Nashville Chicken Sandwich | body: Fried chicken breast dipped in Nashville sauce with cheese, mayo, LTOP.
+- title: Angus Beef Burger | body: Fresh beef patty with cheese, LTOP & mayo.
+- title: Turkey Burger | body: Grilled turkey patty with cheese, mayo & LTOP.
+- title: Twisted Garden Burger | body: Crispy jumbo kale veggie burger grilled to perfection with LTOP.
+- title: California Grilled Chicken Sandwich | body: Grilled chicken breast with Swiss cheese, avocado, spicy mayo, lettuce, tomato & red onion.
+- title: Grilled Cheese | body: Grilled sourdough bread with ribbon crispy potatoes topped with house seasoning.
+
+=== menu.section:tacos ===
+title: Tacos
+items:
+- title: Baja Fish Taco (3) | body: Battered fried Arctic cod topped with creamy coleslaw & spicy jalapeño ranch.
+- title: Taco Plate (3) | body: Chicken or steak tacos topped with chopped onions & cilantro. Shrimp available.
+
+=== menu.section:something-sweet ===
+title: Something Sweet
+items:
+- title: New York Style Cheesecake | body: Classic NY style cheesecake with choice of raspberry, strawberry, caramel or chocolate syrup.
+- title: Ice Cream | body: Two scoops — vanilla, chocolate or strawberry.
+- title: Lava Chocolate Cake | body: Gooey chocolate cake with vanilla ice cream & chocolate sauce.
+- title: Flourless Chocolate Cake | body: Chocolate cake with chocolate mousse & dark chocolate ganache.
+- title: Carrot Cake | body: Moist carrot cake with raisins, walnuts & pineapple topped with cream cheese icing.
+
+=== menu.section:cocktails ===
+title: Cocktails
+items:
+- title: Mad Luv | body: Osadia blanco, Grand Marnier, lime, agave
+- title: Twisted Old Fashioned | body: Maker's Mark, simple syrup, Angostura bitters, orange peel
+- title: Tropical Fantasy | body: Bacardi white & Kraken dark rum, cream of coconut, pineapple, lime
+- title: Violet Beauregarde | body: Malibu coconut rum, butterfly pea flower tea, ginger beer
+- title: Ay Papi | body: Smoke infused Old Forester rye, demerara, vanilla, bitters, orange peel
+- title: Pop Star | body: Osadia blanco, mango passionfruit shrub, vanilla bean puree, Cointreau, lime, tajín
+- title: Room 6520 | body: In-house twisted moonshine, strawberries, lime, hibiscus sugar, soda
+- title: Pin-Up | body: Ford's gin, jalapeño, lime, agave
+
+=== menu.section:bottle-service ===
+title: Bottle Service
+columns:
+- title: Vodka | items: Chopin | Grey Goose | Tito's Handmade
+- title: Whiskey | items: Jameson | Jack Daniel's | Crown Royal | Johnnie Walker Blue
+- title: Gin | items: Bombay Sapphire | Hendrick's
+- title: Tequila | items: Patron Silver | Casamigos Blanco | Casamigos Reposado | Herradura Blanco | Herradura Reposado | Herradura Ultra Añejo | Osadia Blanco | Osadia Reposado | Osadia Añejo | Don Julio Blanco | Don Julio 1942 | Clase Azul Reposado
+- title: Rum | items: Bacardi Silver | Bacardi Coconut | SelvaRey White Rum | SelvaRey Coconut
+
+=== menu.section:tap-list ===
+title: Tap List
+items:
+- title: 805 | body: Firestone Walker · Blonde Ale · 4.7% ABV
+- title: Alaskan Amber | body: Alaskan · Altbier · 5.3% ABV
+- title: Angry Orchard | body: Crisp Apple Cider · 5% ABV
+- title: Big Wave | body: Kona · Golden Ale · 4.4% ABV
+- title: Blood & Honey | body: Revolver · Texas Ale · 7% ABV
+- title: Blue Moon | body: Belgian White · 5.4% ABV
+- title: Bud Light | body: Lager · 4.2% ABV
+- title: Coors Light | body: Lager · 4.2% ABV
+- title: Dallas Blonde | body: DE Brewing Co · Blonde Ale · 5.2% ABV
+- title: Deep Ellum IPA | body: DE Brewing Co · IPA · 7% ABV
+- title: Devils Backbone | body: Real Ale · Belgian Tripel · 8.1% ABV
+- title: Dos Equis Especial | body: Lager · 4.2% ABV
+- title: Corona Premier | body: Kölsch · 4.9% ABV
+- title: Guinness | body: Irish Stout · 4.2% ABV
+- title: Half Life | body: Manhattan Project · IPA · 6.2% ABV
+- title: Juice Pack | body: Tupps · Hazy Pale Ale · 5.5% ABV
+- title: Octoberfest | body: Sam Adams · Märzen · 5.3% ABV
+- title: Longboard | body: Kona · Lager · 4.6% ABV
+- title: Maharaja | body: Avery Brewing · Imperial IPA · 10.2% ABV
+- title: Michelob Ultra | body: Lager · 4.2% ABV
+- title: Miller Lite | body: Lager · 4.2% ABV
+- title: Modelo Especial | body: Lager · 4.5% ABV
+- title: Mosaic Stout | body: Community Beer · Stout · 8.6% ABV
+- title: Shiner Bock | body: Bock · 4.4% ABV
+- title: Stella Artois | body: Lager · 5% ABV
+- title: Temptress | body: Lakewood Brewing · Milk Stout · 9.1% ABV
+- title: Twisted Tea | body: Hard Iced Tea · 5% ABV
+- title: Vanilla Porter | body: Breckenridge · Porter · 4.2% ABV
+- title: Wild Berry Truly | body: Hard Seltzer · 5% ABV
+- title: Yuengling | body: Traditional Lager · 4.5% ABV
+- title: Yuengling Flight | body: Light Lager · 4.2% ABV
+
+=== menu.section:wines ===
+title: Wines
+columns:
+- title: White | items: Roscato Moscato | Harken Chardonnay | St. Francis Chardonnay | Kendall Jackson Avant Chardonnay | Cupcake Pinot Grigio | Santa Margherita Pinot Grigio | Seaglass Pinot Grigio | Noble Vines Sauvignon Blanc | Matua Sauvignon Blanc | 19 Crimes Cali Rosé | Zonin Prosecco | Benvolio Prosecco
+- title: Red | items: Line 39 Cabernet Sauvignon | Norton Cabernet Sauvignon | Liberty School Cabernet Sauvignon | Maddalena Cabernet Sauvignon | Sterling Merlot | Kendall Jackson Merlot | Mon Frere Pinot Noir | Natura Pinot Noir | Sea Sun Pinot Noir | Trouble Maker Red Blend | Banfi Rosa Regale Sparkling Sweet Red
+
+=== menu.section:bottled-beer ===
+title: Bottled Beer
+items:
+- title: Bud Light | body: Lager · 4.5% ABV
+- title: Budweiser | body: Lager · 5% ABV
+- title: Blue Moon | body: Belgian White · 5.4% ABV
+- title: Coors Light | body: Lager · 4.1% ABV
+- title: Corona Extra | body: Lager · 4.6% ABV
+- title: Corona Light | body: Lager · 4.1% ABV
+- title: Corona Premier | body: Lager · 4% ABV
+- title: Dos Equis | body: Lager · 4.2% ABV
+- title: Happy Dad Hard Seltzer | body: Hard Seltzer · 5% ABV
+- title: Heineken | body: Lager · 5% ABV
+- title: Heineken 0.0 | body: Non-Alcoholic
+- title: Jinro Chamisul Fresh | body: Barleywine · 17.2% ABV
+- title: Jinro Chamisul Grapefruit | body: Barleywine · 13% ABV
+- title: Jinro Chamisul Original | body: Barleywine · 20.1% ABV
+- title: Mango Wild Tea | body: Wild Ohio · Tea Beer · 7.8% ABV
+- title: Michelob Ultra | body: Lager · 4.2% ABV
+- title: Miller Genuine Draft | body: Lager · 4.7% ABV
+- title: Miller Lite | body: Lager · 4.2% ABV
+- title: Modelo Especial | body: Lager · 4.5% ABV
+- title: Maibock Franconia | body: Bock · 7.09% ABV
+- title: Shiner Ruby Redbird | body: Fruit · 4% ABV
+- title: Shiner Bock | body: Bock · 4% ABV
+- title: White Claw Black Cherry | body: Hard Seltzer · 5% ABV
+- title: White Claw Mango | body: Hard Seltzer · 5% ABV
+
+=== menu.section:non-alcoholic-beverages ===
+title: Non-Alcoholic Beverages
+text: Pepsi, Diet Pepsi, Starry, Dr Pepper, Lemonade, Sweet Tea, Unsweet Tea, Orange Juice, Cranberry Juice, Ginger Ale
+
+=== menu.section:hookah ===
+title: Hookah
+note_left: Premium flavors — ask your server for today's selection.
+
+=== links ===
+tagline: Sports Bar & Grill · The Colony, TX
+footer_website_label: Visit our website
+footer_website_url: /
+links:
+- label: Food Menu | url: /menu/food.pdf | style: primary | hint: PDF
+- label: Drinks Menu | url: /menu/drinks.pdf | style: primary | hint: PDF
+- label: Hookah Menu | url: /menu/hookah.pdf | style: primary | hint: PDF
+- label: Events | url: /events | style: primary
+- label: Follow Us On Instagram | url: https://www.instagram.com/twistedbarandgrill.dfw/ | icon: instagram
+- label: Join Our Facebook Family | url: https://www.facebook.com/twistedbandg/ | icon: facebook
+- label: Review Us On Google | url: https://www.google.com/search?q=twisted+google+colony&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_zwDEKEM5oQpFUA03DZZdPpiaShl6Fmf0pOD3fe1RLmT2QVyLLo3ZB63baHGjHlpDeCzRscPXQQeBDOvTu7vIGgUxDlFcg-IUF26h_rmeLFt_9Iw2g%3D%3D | icon: google
+
+# Weekly events — edit fields per event slug
+
+=== event:happy-hour-monday ===
+title: Happy Hour
+schedule_day: Monday
+time: 4:00 – 7:00 PM
+description: Weekday happy hour — food and drink specials Monday through Friday, 4:00 – 7:00 PM. Dine in or grab a seat at the bar.
+weekly_blurb: Food and drink specials at the bar and patio.
+highlights: Food specials | Drink specials | Bar & patio seating
+featured: no
+
+=== event:happy-hour-tuesday ===
+title: Happy Hour
+schedule_day: Tuesday
+time: 4:00 – 7:00 PM
+description: Weekday happy hour — food and drink specials Monday through Friday, 4:00 – 7:00 PM.
+weekly_blurb: Food and drink specials at the bar and patio.
+highlights: Food specials | Drink specials | Midweek unwind
+featured: no
+
+=== event:karaoke-night ===
+title: Karaoke Night
+schedule_day: Wednesday
+time: 9:00 PM – 2:00 AM
+description: It's a karaoke night every Wednesday — sing your heart out with music, food, drinks, and hookah.
+weekly_blurb: Sing your heart out with music, food, drinks, and hookah.
+highlights: Music & karaoke | Food & drinks | Hookah | Free entry & parking
+featured: yes
+
+=== event:ladies-lounge ===
+title: Ladies Lounge
+schedule_day: Thursday
+time: 8:00 PM onwards
+description: Our weekly Thursday night with live DJ, drink specials, and the Ladies Lounge experience from 8 PM onwards.
+weekly_blurb: Live DJ, drink specials, and the Ladies Lounge experience — powered by S&W Productions.
+highlights: Live DJ & music | Drink specials | 175″ LED wall | Hookah & HiFi audio
+featured: no
+
+=== event:friday-nights ===
+title: Friday Nights Hit Different
+schedule_day: Friday
+time: 9:00 PM – 2:00 AM
+description: Live band, DJ, premium hookah, and late-night energy on the patio and in the lounge.
+weekly_blurb: Live band, DJ, premium hookah, and late-night patio vibes.
+highlights: Live band & DJ | Premium hookah | Giant screens | Free entry & parking
+featured: yes
+
+=== event:rnb-brunch ===
+title: R&B Brunch
+schedule_day: Saturday
+time: 11:00 AM – 4:00 PM
+description: Saturday R&B brunch with great food, drinks, and afternoon energy — live music takes over Saturday night.
+weekly_blurb: R&B brunch with great food, drinks, and afternoon energy.
+highlights: R&B vibes | Brunch plates | Cocktails | Patio & indoor
+featured: yes
+
+=== event:paint-and-sip-brunch ===
+title: Paint & Sip Brunch
+schedule_day: Sunday
+time: 11:00 AM – 4:00 PM
+description: Unwind on Sunday with brunch, cocktails, and a paint-and-sip experience — a relaxed way to close out the weekend.
+weekly_blurb: Brunch, cocktails, and a paint-and-sip experience.
+highlights: Paint & sip | Brunch plates | Cocktails | Patio & indoor
+featured: yes

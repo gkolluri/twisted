@@ -52,8 +52,8 @@
       "{{SITE_URL}}/images/bar-lounge.png"
     ],
     "description": "American sports bar and grill in The Colony, TX with full bar, patio seating, weekend brunch, live music, and weekly events near Grandscape.",
-    "telephone": "+1-214-407-7587",
-    "email": "info@twisteddfw.com",
+    "telephone": "{{CMS_PHONE_SCHEMA}}",
+    "email": "{{CMS_EMAIL}}",
     "priceRange": "$$",
     "servesCuisine": ["American", "Bar Food"],
     "acceptsReservations": "True",
@@ -85,14 +85,14 @@
       }
     ],
     "sameAs": [
-      "https://www.instagram.com/twistedbarandgrill.dfw/",
-      "https://www.facebook.com/twistedbandg/"
+      "{{CMS_INSTAGRAM}}",
+      "{{CMS_FACEBOOK}}"
     ],
     "hasMenu": "{{SITE_URL}}/menu",
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.3",
-      "reviewCount": "750",
+      "ratingValue": "{{CMS_REVIEWS_RATING}}",
+      "reviewCount": "{{CMS_REVIEWS_COUNT_SCHEMA}}",
       "bestRating": "5"
     }
   }
@@ -138,60 +138,26 @@
     </div>
     <div class="container hero-content">
       <h1>
-        <span class="hero-line">Eat. Drink.</span>
-        <span class="hero-line hero-line--accent">Feel the Beat.</span>
+        <span class="hero-line">{{CMS_HERO_LINE1}}</span>
+        <span class="hero-line hero-line--accent">{{CMS_HERO_LINE2}}</span>
       </h1>
-      <p class="hero-tagline">One place, every experience.</p>
-      <p class="hero-desc">DFW's most electrifying bar &amp; grill — <strong>handcrafted cocktails, draft beers on tap, fire-grilled plates</strong>, and premium upscale lounge seating. Hookah. Live bands &amp; DJs. Weekend brunch. Covered patio and open-air courtyard. Right by Grandscape.</p>
+      <p class="hero-tagline">{{CMS_HERO_TAGLINE}}</p>
+      <p class="hero-desc">{{CMS_HERO_DESC}}</p>
       <div class="hero-actions">
-        <a href="/events" class="btn btn-hero-primary">See Weekly Events</a>
-        <a href="tel:+12144077587" class="btn btn-hero">Call Us</a>
+        <a href="/events" class="btn btn-hero-primary">{{CMS_HERO_CTA_PRIMARY}}</a>
+        <a href="tel:{{CMS_PHONE_TEL}}" class="btn btn-hero">{{CMS_HERO_CTA_SECONDARY}}</a>
       </div>
     </div>
   </section>
 
   <section id="about">
     <div class="container">
-      <p class="section-label">About Us</p>
-      <h2 class="section-title">More Than a Bar. An Entertainment Destination</h2>
-      <p class="section-subtitle">Twisted is where The Colony comes together — trivia nights, live performances, themed parties, and community celebrations from open to close. Walk in with your crew, book a private event, or settle in for the evening. Open until 2 AM every night.</p>
+      <p class="section-label">{{CMS_ABOUT_LABEL}}</p>
+      <h2 class="section-title">{{CMS_ABOUT_TITLE}}</h2>
+      <p class="section-subtitle">{{CMS_ABOUT_SUBTITLE}}</p>
 
       <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🍸</div>
-          <h3>Handcrafted Cocktails</h3>
-          <p>Signature cocktails, draft beers on tap, wine, and specialty pours from our full bar.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💨</div>
-          <h3>Hookah Lounge</h3>
-          <p>Upscale lounge seating and premium hookah — ask your server for flavors and pricing.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📺</div>
-          <h3>Sports Bar</h3>
-          <p>175″ LED wall, 150″ screen, and large TVs in every corner — all paired with a hi-fi audio system for game day and live events.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🔥</div>
-          <h3>Fire-Grilled Plates</h3>
-          <p>Burgers, wings, tacos, and fan favorites from our kitchen — cooked to order and served hot.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🌿</div>
-          <h3>Patio &amp; Courtyard</h3>
-          <p>Covered patio and open-air courtyard seating — brunch, dinner, or drinks under the Texas sky.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🎵</div>
-          <h3>Live Music</h3>
-          <p>Live music every Friday and Saturday night — feel the beat at Twisted.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🥂</div>
-          <h3>Weekend Brunch</h3>
-          <p>Saturday R&amp;B brunch and Sunday paint &amp; sip brunch, both 11 AM – 4 PM.</p>
-        </div>
+{{CMS_FEATURES_GRID}}
       </div>
     </div>
   </section>
@@ -200,10 +166,10 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-text">
-          <p class="section-label">Our Space</p>
-          <h2 class="section-title">A Modern Sports Bar in The Colony</h2>
-          <p>Wide-screen TVs, comfortable booths, patio seating, and a full bar — whether you're catching the game or meeting friends for dinner, Twisted has you covered.</p>
-          <p>Located at Cascades Court near Grandscape and Topgolf — the go-to spot for North Dallas suburbs including Frisco, Lewisville, Plano, and Carrollton.</p>
+          <p class="section-label">{{CMS_GALLERY_SPACE_LABEL}}</p>
+          <h2 class="section-title">{{CMS_GALLERY_SPACE_TITLE}}</h2>
+          <p>{{CMS_GALLERY_SPACE_BODY1}}</p>
+          <p>{{CMS_GALLERY_SPACE_BODY2}}</p>
         </div>
         <div class="about-image">
           <img src="/images/interior-1.png" alt="Twisted Bar and Grill dining area with booths and bar seating" width="1200" height="800" loading="lazy">
@@ -215,10 +181,10 @@
           <img src="/images/bar-lounge.png" alt="Signature cocktail and premium hookah at Twisted Bar and Grill" width="682" height="1024" loading="lazy">
         </div>
         <div class="about-text">
-          <p class="section-label">Full Bar</p>
-          <h2 class="section-title">Cocktails, Craft Beer &amp; Lounge</h2>
-          <p>Signature cocktails, beer and wine, and premium hookah in a comfortable lounge setting — whether you're here for the game or a night out with friends.</p>
-          <p>Ask your server about drink specials and hookah flavors.</p>
+          <p class="section-label">{{CMS_GALLERY_BAR_LABEL}}</p>
+          <h2 class="section-title">{{CMS_GALLERY_BAR_TITLE}}</h2>
+          <p>{{CMS_GALLERY_BAR_BODY1}}</p>
+          <p>{{CMS_GALLERY_BAR_BODY2}}</p>
         </div>
       </div>
     </div>
@@ -228,10 +194,10 @@
     <div class="container">
       <div class="events-teaser">
         <div class="events-teaser-text">
-          <p class="section-label">Events</p>
-          <h2>Something's Always Happening</h2>
-          <p>Happy hour, karaoke, live music, and weekend brunch — seven days of drinks, food, and good vibes at Twisted near Grandscape.</p>
-          <a href="/events" class="btn btn-primary">See Weekly Events</a>
+          <p class="section-label">{{CMS_EVENTS_LABEL}}</p>
+          <h2>{{CMS_EVENTS_TITLE}}</h2>
+          <p>{{CMS_EVENTS_BODY}}</p>
+          <a href="/events" class="btn btn-primary">{{CMS_EVENTS_CTA}}</a>
         </div>
       </div>
     </div>
@@ -244,42 +210,7 @@
       <p class="section-subtitle">The dishes our regulars can't stop talking about.</p>
 
       <div class="menu-grid">
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <h3>Twisted Potato</h3>
-            <p>Ribbon crispy potato topped with house seasoning salt</p>
-          </div>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <h3>Chicken 65</h3>
-            <p>Fried battered chicken tossed in our house 65 sauce</p>
-          </div>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <h3>Baja Fish Taco</h3>
-            <p>Battered Arctic cod with coleslaw &amp; jalapeño ranch</p>
-          </div>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <h3>Angus Beef Burger</h3>
-            <p>Fresh beef patty with cheese, LTOP &amp; mayo</p>
-          </div>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <h3>Nashville Chicken Sandwich</h3>
-            <p>Fried chicken dipped in Nashville sauce with cheese &amp; mayo</p>
-          </div>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <h3>Loaded Nachos</h3>
-            <p>Corn chips, beans, pico, jalapeños, cheese, sour cream &amp; guacamole</p>
-          </div>
-        </div>
+{{CMS_MENU_HIGHLIGHTS}}
       </div>
 
       <div class="menu-section-cta">
@@ -291,30 +222,9 @@
 
   <section id="reviews" class="reviews-section">
     <div class="container">
-      <h2 class="reviews-heading">What Our Customers Say</h2>
+      <h2 class="reviews-heading">{{CMS_REVIEWS_HEADING}}</h2>
 
-      <div class="reviews-summary">
-        <div class="reviews-summary-brand">
-          <div class="reviews-google-logo" aria-hidden="true">
-            <span class="reviews-google-word">
-              <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
-            </span>
-            <span>Reviews</span>
-          </div>
-          <div class="reviews-rating-row">
-            <span class="reviews-score">4.3</span>
-            <div class="reviews-stars" aria-label="4.3 out of 5 stars">
-              <span class="reviews-star reviews-star--full"></span>
-              <span class="reviews-star reviews-star--full"></span>
-              <span class="reviews-star reviews-star--full"></span>
-              <span class="reviews-star reviews-star--full"></span>
-              <span class="reviews-star reviews-star--partial" style="--fill: 30%"></span>
-            </div>
-            <span class="reviews-count">(750+)</span>
-          </div>
-        </div>
-        <a class="reviews-cta" href="https://www.google.com/search?q=twisted+google+colony&amp;si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_zwDEKEM5oQpFUA03DZZdPpiaShl6Fmf0pOD3fe1RLmT2QVyLLo3ZB63baHGjHlpDeCzRscPXQQeBDOvTu7vIGgUxDlFcg-IUF26h_rmeLFt_9Iw2g%3D%3D" target="_blank" rel="noopener noreferrer">Review us on Google</a>
-      </div>
+{{CMS_REVIEWS_SUMMARY}}
 
       <div class="reviews-carousel-wrap">
         <button type="button" class="reviews-nav reviews-nav--prev" aria-label="Previous reviews" disabled>
@@ -322,95 +232,7 @@
         </button>
 
         <div class="reviews-carousel" tabindex="0" aria-label="Customer reviews">
-          <article class="review-card">
-            <div class="review-card-header">
-              <div class="review-avatar" style="--avatar-color: #5b8def">V</div>
-              <div>
-                <p class="review-author">Vidya Garapati</p>
-                <p class="review-meta"><span class="review-google-g" aria-hidden="true">G</span> 2 months ago</p>
-              </div>
-            </div>
-            <div class="review-stars" aria-hidden="true">
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-            </div>
-            <p class="review-text">Amazing experience! Great ambience, perfect music, and top-notch service. The drinks were spot on, and the food was fresh and delicious. Definitely coming back!</p>
-          </article>
-
-          <article class="review-card">
-            <div class="review-card-header">
-              <div class="review-avatar" style="--avatar-color: #e85d26">M</div>
-              <div>
-                <p class="review-author">Megan Mitchell</p>
-                <p class="review-meta"><span class="review-google-g" aria-hidden="true">G</span> 1 month ago</p>
-              </div>
-            </div>
-            <div class="review-stars" aria-hidden="true">
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-            </div>
-            <p class="review-text">Perfect spot to unwind with hookah. The energy is lively without being overwhelming, music hits just right, and the staff was cool. A go-to for a chill night out.</p>
-          </article>
-
-          <article class="review-card">
-            <div class="review-card-header">
-              <div class="review-avatar" style="--avatar-color: #34a853">C</div>
-              <div>
-                <p class="review-author">Chaitanya Kumar</p>
-                <p class="review-meta"><span class="review-google-g" aria-hidden="true">G</span> 1 week ago</p>
-              </div>
-            </div>
-            <div class="review-stars" aria-hidden="true">
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-            </div>
-            <p class="review-text">The music selection was fantastic and the DJ kept the crowd engaged. The courtyard was my favorite — hookah and cocktails under the trees felt like a resort. Flavorful food and great service.</p>
-          </article>
-
-          <article class="review-card">
-            <div class="review-card-header">
-              <div class="review-avatar" style="--avatar-color: #9333ea">J</div>
-              <div>
-                <p class="review-author">Jenu</p>
-                <p class="review-meta"><span class="review-google-g" aria-hidden="true">G</span> 3 months ago</p>
-              </div>
-            </div>
-            <div class="review-stars" aria-hidden="true">
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--empty reviews-star--sm"></span>
-            </div>
-            <p class="review-text">A great sports bar with an extensive beer selection, solid food menu, and lively atmosphere. Perfect for catching a game and enjoying a cold drink with friends.</p>
-          </article>
-
-          <article class="review-card">
-            <div class="review-card-header">
-              <div class="review-avatar" style="--avatar-color: #0ea5e9">C</div>
-              <div>
-                <p class="review-author">Crystal T.</p>
-                <p class="review-meta"><span class="review-google-g" aria-hidden="true">G</span> 4 months ago</p>
-              </div>
-            </div>
-            <div class="review-stars" aria-hidden="true">
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-              <span class="reviews-star reviews-star--full reviews-star--sm"></span>
-            </div>
-            <p class="review-text">Overall, 9 out of 10. I will be going back.</p>
-          </article>
+{{CMS_REVIEWS_CAROUSEL}}
         </div>
 
         <button type="button" class="reviews-nav reviews-nav--next" aria-label="Next reviews">
@@ -431,19 +253,19 @@
         <div class="info-card">
           <h3>Location</h3>
           <address style="font-style: normal;">
-            <a href="https://maps.google.com/?q=6520+Cascades+Court+%23200,+The+Colony,+TX+75056" target="_blank" rel="noopener noreferrer">6520 Cascades Court #200<br>The Colony, TX 75056</a>
+            <a href="https://maps.google.com/?q={{CMS_ADDRESS_QUERY}}" target="_blank" rel="noopener noreferrer">{{CMS_ADDRESS_LINE1}}<br>{{CMS_ADDRESS_LINE2}}</a>
           </address>
           <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">Near Grandscape & Topgolf</p>
         </div>
         <div class="info-card">
           <h3>Contact</h3>
-          <p><a href="tel:+12144077587">(214) 407-7587</a></p>
-          <p style="margin-top: 0.5rem;"><a href="mailto:info@twisteddfw.com">info@twisteddfw.com</a></p>
+          <p><a href="tel:{{CMS_PHONE_TEL}}">{{CMS_PHONE}}</a></p>
+          <p style="margin-top: 0.5rem;"><a href="mailto:{{CMS_EMAIL}}">{{CMS_EMAIL}}</a></p>
           <div class="social-links" style="margin-top: 1rem;">
-            <a href="https://www.instagram.com/twistedbarandgrill.dfw/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="{{CMS_INSTAGRAM}}" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             </a>
-            <a href="https://www.facebook.com/twistedbandg/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="{{CMS_FACEBOOK}}" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
           </div>
@@ -452,20 +274,20 @@
           <h3>Hours</h3>
           <ul class="hours-list">
             <li>
-              <span class="hours-day">Monday – Friday</span>
-              <span class="hours-time">4 PM – 2 AM</span>
+              <span class="hours-day">{{CMS_HOURS_WEEKDAY}}</span>
+              <span class="hours-time">{{CMS_HOURS_WEEKDAY_TIME}}</span>
             </li>
             <li>
-              <span class="hours-day">Saturday – Sunday</span>
-              <span class="hours-time">11 AM – 2 AM</span>
+              <span class="hours-day">{{CMS_HOURS_WEEKEND}}</span>
+              <span class="hours-time">{{CMS_HOURS_WEEKEND_TIME}}</span>
             </li>
           </ul>
-          <p class="hours-note">Weekend brunch Sat &amp; Sun<br>Happy hour weekdays · 4–7 PM</p>
+          <p class="hours-note">{{CMS_HOURS_NOTE}}</p>
         </div>
       </div>
 
       <div style="margin-top: 2.5rem; text-align: center;">
-        <a href="tel:+12144077587" class="btn btn-primary">Call (214) 407-7587</a>
+        <a href="tel:{{CMS_PHONE_TEL}}" class="btn btn-primary">Call {{CMS_PHONE}}</a>
       </div>
     </div>
   </section>
@@ -477,18 +299,18 @@
       <p>&copy; 2026 Twisted Bar & Grill · The Colony, TX · <a href="https://twisteddfw.com">twisteddfw.com</a></p>
       <div class="footer-social">
         <div class="social-links">
-          <a href="https://www.instagram.com/twistedbarandgrill.dfw/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="{{CMS_INSTAGRAM}}" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           </a>
-          <a href="https://www.facebook.com/twistedbandg/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <a href="{{CMS_FACEBOOK}}" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
         </div>
         <ul class="footer-links">
         <li><a href="/menu">Menu</a></li>
         <li><a href="/events">Events</a></li>
-        <li><a href="tel:+12144077587">Call Us</a></li>
-        <li><a href="mailto:info@twisteddfw.com">Email Us</a></li>
+        <li><a href="tel:{{CMS_PHONE_TEL}}">Call Us</a></li>
+        <li><a href="mailto:{{CMS_EMAIL}}">Email Us</a></li>
         </ul>
       </div>
     </div>

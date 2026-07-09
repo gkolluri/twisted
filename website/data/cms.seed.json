@@ -1,0 +1,104 @@
+{
+  "site": {
+    "name": "Twisted Bar & Grill",
+    "phone": "(214) 407-7587",
+    "phoneTel": "+12144077587",
+    "email": "info@twisteddfw.com",
+    "addressLine1": "6520 Cascades Court #200",
+    "addressLine2": "The Colony, TX 75056",
+    "instagram": "https://www.instagram.com/twistedbarandgrill.dfw/",
+    "facebook": "https://www.facebook.com/twistedbandg/",
+    "googleReviews": "https://www.google.com/search?q=twisted+google+colony&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_zwDEKEM5oQpFUA03DZZdPpiaShl6Fmf0pOD3fe1RLmT2QVyLLo3ZB63baHGjHlpDeCzRscPXQQeBDOvTu7vIGgUxDlFcg-IUF26h_rmeLFt_9Iw2g%3D%3D",
+    "hoursWeekday": "Monday – Friday",
+    "hoursWeekdayTime": "4 PM – 2 AM",
+    "hoursWeekend": "Saturday – Sunday",
+    "hoursWeekendTime": "11 AM – 2 AM",
+    "hoursNote": "Weekend brunch Sat & Sun · Happy hour weekdays · 4–7 PM"
+  },
+  "homepage": {
+    "hero": {
+      "line1": "Eat. Drink.",
+      "line2": "Feel the Beat.",
+      "tagline": "One place, every experience.",
+      "description": "DFW's most electrifying bar & grill — handcrafted cocktails, draft beers on tap, fire-grilled plates, and premium upscale lounge seating. Hookah. Live bands & DJs. Weekend brunch. Covered patio and open-air courtyard. Right by Grandscape.",
+      "ctaPrimary": "See Weekly Events",
+      "ctaSecondary": "Call Us"
+    },
+    "about": {
+      "label": "About Us",
+      "title": "More Than a Bar. An Entertainment Destination",
+      "subtitle": "Twisted is where The Colony comes together — trivia nights, live performances, themed parties, and community celebrations from open to close. Walk in with your crew, book a private event, or settle in for the evening. Open until 2 AM every night.",
+      "features": [
+        { "icon": "🍸", "title": "Handcrafted Cocktails", "body": "Signature cocktails, draft beers on tap, wine, and specialty pours from our full bar." },
+        { "icon": "💨", "title": "Hookah Lounge", "body": "Upscale lounge seating and premium hookah — ask your server for flavors and pricing." },
+        { "icon": "📺", "title": "Sports Bar", "body": "175″ LED wall, 150″ screen, and large TVs in every corner — all paired with a hi-fi audio system for game day and live events." },
+        { "icon": "🔥", "title": "Fire-Grilled Plates", "body": "Burgers, wings, tacos, and fan favorites from our kitchen — cooked to order and served hot." },
+        { "icon": "🌿", "title": "Patio & Courtyard", "body": "Covered patio and open-air courtyard seating — brunch, dinner, or drinks under the Texas sky." },
+        { "icon": "🎵", "title": "Live Music", "body": "Live music every Friday and Saturday night — feel the beat at Twisted." },
+        { "icon": "🥂", "title": "Weekend Brunch", "body": "Saturday R&B brunch and Sunday paint & sip brunch, both 11 AM – 4 PM." }
+      ]
+    },
+    "gallery": {
+      "spaceLabel": "Our Space",
+      "spaceTitle": "A Modern Sports Bar in The Colony",
+      "spaceBody1": "Wide-screen TVs, comfortable booths, patio seating, and a full bar — whether you're catching the game or meeting friends for dinner, Twisted has you covered.",
+      "spaceBody2": "Located at Cascades Court near Grandscape and Topgolf — the go-to spot for North Dallas suburbs including Frisco, Lewisville, Plano, and Carrollton.",
+      "barLabel": "Full Bar",
+      "barTitle": "Cocktails, Craft Beer & Lounge",
+      "barBody1": "Signature cocktails, beer and wine, and premium hookah in a comfortable lounge setting — whether you're here for the game or a night out with friends.",
+      "barBody2": "Ask your server about drink specials and hookah flavors."
+    },
+    "events_teaser": {
+      "label": "Events",
+      "title": "Something's Always Happening",
+      "body": "Happy hour, karaoke, live music, and weekend brunch — seven days of drinks, food, and good vibes at Twisted near Grandscape.",
+      "cta": "See Weekly Events"
+    },
+    "menu_highlights": [
+      { "title": "Twisted Potato", "body": "Ribbon crispy potato topped with house seasoning salt" },
+      { "title": "Chicken 65", "body": "Fried battered chicken tossed in our house 65 sauce" },
+      { "title": "Baja Fish Taco", "body": "Battered Arctic cod with coleslaw & jalapeño ranch" },
+      { "title": "Angus Beef Burger", "body": "Fresh beef patty with cheese, LTOP & mayo" },
+      { "title": "Nashville Chicken Sandwich", "body": "Fried chicken dipped in Nashville sauce with cheese & mayo" },
+      { "title": "Loaded Nachos", "body": "Corn chips, beans, pico, jalapeños, cheese, sour cream & guacamole" }
+    ],
+    "reviews": {
+      "heading": "What Our Customers Say",
+      "rating": 4.3,
+      "count": "750+",
+      "items": [
+        { "author": "Vidya Garapati", "date": "2 months ago", "stars": 5, "text": "Amazing experience! Great ambience, perfect music, and top-notch service. The drinks were spot on, and the food was fresh and delicious. Definitely coming back!", "color": "#5b8def" },
+        { "author": "Megan Mitchell", "date": "1 month ago", "stars": 5, "text": "Perfect spot to unwind with hookah. The energy is lively without being overwhelming, music hits just right, and the staff was cool. A go-to for a chill night out.", "color": "#e85d26" },
+        { "author": "Chaitanya Kumar", "date": "1 week ago", "stars": 5, "text": "The music selection was fantastic and the DJ kept the crowd engaged. The courtyard was my favorite — hookah and cocktails under the trees felt like a resort. Flavorful food and great service.", "color": "#34a853" },
+        { "author": "Jenu", "date": "3 months ago", "stars": 4, "text": "A great sports bar with an extensive beer selection, solid food menu, and lively atmosphere. Perfect for catching a game and enjoying a cold drink with friends.", "color": "#9333ea" },
+        { "author": "Crystal T.", "date": "4 months ago", "stars": 5, "text": "Overall, 9 out of 10. I will be going back.", "color": "#0ea5e9" }
+      ]
+    }
+  },
+  "links": {
+    "tagline": "Sports Bar & Grill · The Colony, TX",
+    "footerWebsiteUrl": "https://twisteddfw.com",
+    "footerWebsiteDisplay": "twisteddfw.com",
+    "items": [
+      { "label": "Food Menu", "url": "/menu/food.pdf", "style": "primary", "hint": "PDF" },
+      { "label": "Drinks Menu", "url": "/menu/drinks.pdf", "style": "primary", "hint": "PDF" },
+      { "label": "Hookah Menu", "url": "/menu/hookah.pdf", "style": "primary", "hint": "PDF" },
+      { "label": "Events", "url": "/events", "style": "primary" },
+      { "label": "Instagram", "url": "https://www.instagram.com/twistedbarandgrill.dfw/", "icon": "instagram" },
+      { "label": "Facebook", "url": "https://www.facebook.com/twistedbandg/", "icon": "facebook" },
+      { "label": "Google Reviews", "url": "https://www.google.com/search?q=twisted+google+colony&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_zwDEKEM5oQpFUA03DZZdPpiaShl6Fmf0pOD3fe1RLmT2QVyLLo3ZB63baHGjHlpDeCzRscPXQQeBDOvTu7vIGgUxDlFcg-IUF26h_rmeLFt_9Iw2g%3D%3D", "icon": "google" }
+    ]
+  },
+  "events_page": {
+    "label": "Weekly Schedule",
+    "title": "Events Every Week",
+    "body": "Happy hour Monday through Thursday, karaoke, Ladies Lounge, live music, and weekend brunch — something on the calendar every day of the week.",
+    "featuredLabel": "Featured",
+    "featuredTitle": "Weekly Events",
+    "scheduleLabel": "Every Week",
+    "scheduleTitle": "Regular Weekly Schedule",
+    "scheduleNote": "Happy hour every weekday · 4:00 – 7:00 PM",
+    "privateTitle": "Private Events & Large Parties",
+    "privateBody": "Planning a birthday, corporate event, or large group? Call us and our team will follow up with details."
+  }
+}
