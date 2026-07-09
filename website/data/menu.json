@@ -141,27 +141,13 @@
         {
           "title": "Dry Rub",
           "items": [
-            "Cajun",
-            "Blackened",
-            "Lemon Pepper",
-            "Caribbean Jerk",
-            "Salt & Pepper",
-            "Garlic Parmesan"
+            "Cajun"
           ]
         },
         {
           "title": "Wet Sauce",
           "items": [
-            "Nashville",
-            "65 Sauce",
-            "Mango Habanero",
-            "Buffalo Hot",
-            "Buffalo Medium",
-            "Sweet Chili",
-            "Buffalo Mild",
-            "Buffalo Lemon Pepper",
-            "Cajun Ranch",
-            "BBQ"
+            "Nashville"
           ]
         }
       ]
@@ -351,51 +337,31 @@
         {
           "title": "Vodka",
           "items": [
-            "Chopin",
-            "Grey Goose",
-            "Tito's Handmade"
+            "Chopin"
           ]
         },
         {
           "title": "Whiskey",
           "items": [
-            "Jameson",
-            "Jack Daniel's",
-            "Crown Royal",
-            "Johnnie Walker Blue"
+            "Jameson"
           ]
         },
         {
           "title": "Gin",
           "items": [
-            "Bombay Sapphire",
-            "Hendrick's"
+            "Bombay Sapphire"
           ]
         },
         {
           "title": "Tequila",
           "items": [
-            "Patron Silver",
-            "Casamigos Blanco",
-            "Casamigos Reposado",
-            "Herradura Blanco",
-            "Herradura Reposado",
-            "Herradura Ultra Añejo",
-            "Osadia Blanco",
-            "Osadia Reposado",
-            "Osadia Añejo",
-            "Don Julio Blanco",
-            "Don Julio 1942",
-            "Clase Azul Reposado"
+            "Patron Silver"
           ]
         },
         {
           "title": "Rum",
           "items": [
-            "Bacardi Silver",
-            "Bacardi Coconut",
-            "SelvaRey White Rum",
-            "SelvaRey Coconut"
+            "Bacardi Silver"
           ]
         }
       ]
@@ -541,34 +507,13 @@
         {
           "title": "White",
           "items": [
-            "Roscato Moscato",
-            "Harken Chardonnay",
-            "St. Francis Chardonnay",
-            "Kendall Jackson Avant Chardonnay",
-            "Cupcake Pinot Grigio",
-            "Santa Margherita Pinot Grigio",
-            "Seaglass Pinot Grigio",
-            "Noble Vines Sauvignon Blanc",
-            "Matua Sauvignon Blanc",
-            "19 Crimes Cali Rosé",
-            "Zonin Prosecco",
-            "Benvolio Prosecco"
+            "Roscato Moscato"
           ]
         },
         {
           "title": "Red",
           "items": [
-            "Line 39 Cabernet Sauvignon",
-            "Norton Cabernet Sauvignon",
-            "Liberty School Cabernet Sauvignon",
-            "Maddalena Cabernet Sauvignon",
-            "Sterling Merlot",
-            "Kendall Jackson Merlot",
-            "Mon Frere Pinot Noir",
-            "Natura Pinot Noir",
-            "Sea Sun Pinot Noir",
-            "Trouble Maker Red Blend",
-            "Banfi Rosa Regale Sparkling Sweet Red"
+            "Line 39 Cabernet Sauvignon"
           ]
         }
       ]

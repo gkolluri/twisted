@@ -136,11 +136,22 @@ lines.push(
   '',
   '=== links ===',
   `tagline: ${cms.links.tagline}`,
-  `food_menu_label: ${cms.links.foodMenuLabel}`,
-  `hookah_menu_label: ${cms.links.hookahMenuLabel}`,
-  '',
-  '# Weekly events — edit fields per event slug',
+  `footer_website_url: ${cms.links.footerWebsiteUrl || 'https://twisteddfw.com'}`,
+  `footer_website_display: ${cms.links.footerWebsiteDisplay || cms.links.footerWebsiteLabel || 'twisteddfw.com'}`,
+  'links:',
 );
+for (const link of cms.links.items || []) {
+  const parts = [
+    `label: ${link.label}`,
+    `url: ${link.url}`,
+    link.style ? `style: ${link.style}` : null,
+    link.hint ? `hint: ${link.hint}` : null,
+    link.icon ? `icon: ${link.icon}` : null,
+  ].filter(Boolean);
+  lines.push(`- ${parts.join(' | ')}`);
+}
+
+lines.push('', '# Weekly events — edit fields per event slug');
 
 for (const event of events) {
   lines.push(

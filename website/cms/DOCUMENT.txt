@@ -278,8 +278,16 @@ note_left: Premium flavors — ask your server for today's selection.
 
 === links ===
 tagline: Sports Bar & Grill · The Colony, TX
-food_menu_label: Food & Drinks Menu
-hookah_menu_label: Hookah Menu
+footer_website_label: Visit our website
+footer_website_url: /
+links:
+- label: Food Menu | url: /menu/food.pdf | style: primary | hint: PDF
+- label: Drinks Menu | url: /menu/drinks.pdf | style: primary | hint: PDF
+- label: Hookah Menu | url: /menu/hookah.pdf | style: primary | hint: PDF
+- label: Events | url: /events | style: primary
+- label: Follow Us On Instagram | url: https://www.instagram.com/twistedbarandgrill.dfw/ | icon: instagram
+- label: Join Our Facebook Family | url: https://www.facebook.com/twistedbandg/ | icon: facebook
+- label: Review Us On Google | url: https://www.google.com/search?q=twisted+google+colony&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_zwDEKEM5oQpFUA03DZZdPpiaShl6Fmf0pOD3fe1RLmT2QVyLLo3ZB63baHGjHlpDeCzRscPXQQeBDOvTu7vIGgUxDlFcg-IUF26h_rmeLFt_9Iw2g%3D%3D | icon: google
 
 # Weekly events — edit fields per event slug
 

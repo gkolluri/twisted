@@ -149,6 +149,17 @@ function mergeEventsFromSections(sections, eventsSeed) {
   return events;
 }
 
+function mergeLinkItems(seedItems, docItems) {
+  const seed = seedItems || [];
+  const doc = docItems || [];
+  const seedMenus = seed.filter((item) => !item.icon);
+  const socialByIcon = {};
+  for (const item of seed.filter((item) => item.icon)) socialByIcon[item.icon] = item;
+  for (const item of doc.filter((item) => item.icon)) socialByIcon[item.icon] = item;
+  if (!seedMenus.length && !Object.keys(socialByIcon).length) return doc;
+  return [...seedMenus, ...Object.values(socialByIcon)];
+}
+
 function extendCmsFromSections(cms, sections) {
   const eventsPage = sections['events.page'] || sections['events-page'] || {};
   cms.events_page = {
@@ -168,6 +179,7 @@ function extendCmsFromSections(cms, sections) {
 
 module.exports = {
   deepMerge,
+  mergeLinkItems,
   mergeMenuFromSections,
   mergeEventsFromSections,
   extendCmsFromSections,

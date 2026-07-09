@@ -17,7 +17,7 @@
   },
   "homepage": {
     "hero": {
-      "line1": "Eat. Drink.Enjoy",
+      "line1": "Eat. Drink.",
       "line2": "Feel the Beat.",
       "tagline": "One place, every experience.",
       "description": "DFW's most electrifying bar & grill — handcrafted cocktails, draft beers on tap, fire-grilled plates, and premium upscale lounge seating. Hookah. Live bands & DJs. Weekend brunch. Covered patio and open-air courtyard. Right by Grandscape.",
@@ -153,13 +153,59 @@
   },
   "links": {
     "tagline": "Sports Bar & Grill · The Colony, TX",
-    "foodMenuLabel": "Food & Drinks Menu",
-    "hookahMenuLabel": "Hookah Menu"
+    "footerWebsiteUrl": "https://twisteddfw.com",
+    "footerWebsiteDisplay": "twisteddfw.com",
+    "items": [
+      {
+        "label": "Food Menu",
+        "url": "/menu/food.pdf",
+        "style": "primary",
+        "hint": "PDF"
+      },
+      {
+        "label": "Drinks Menu",
+        "url": "/menu/drinks.pdf",
+        "style": "primary",
+        "hint": "PDF"
+      },
+      {
+        "label": "Hookah Menu",
+        "url": "/menu/hookah.pdf",
+        "style": "primary",
+        "hint": "PDF"
+      },
+      {
+        "label": "Events",
+        "url": "/events",
+        "style": "primary"
+      },
+      {
+        "label": "Follow Us On Instagram",
+        "url": "https://www.instagram.com/twistedbarandgrill.dfw/",
+        "style": "",
+        "hint": "",
+        "icon": "instagram"
+      },
+      {
+        "label": "Join Our Facebook Family",
+        "url": "https://www.facebook.com/twistedbandg/",
+        "style": "",
+        "hint": "",
+        "icon": "facebook"
+      },
+      {
+        "label": "Review Us On Google Reviews",
+        "url": "https://www.google.com/search?q=twisted+google+colony&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_zwDEKEM5oQpFUA03DZZdPpiaShl6Fmf0pOD3fe1RLmT2QVyLLo3ZB63baHGjHlpDeCzRscPXQQeBDOvTu7vIGgUxDlFcg-IUF26h_rmeLFt_9Iw2g%3D%3D",
+        "style": "",
+        "hint": "",
+        "icon": "google"
+      }
+    ]
   },
   "events_page": {
     "label": "Weekly Schedule",
     "title": "Events Every Week",
-    "body": "",
+    "body": "Happy hour Monday through Thursday, karaoke, Ladies Lounge, live music, and weekend brunch — something on the calendar every day of the week.",
     "featuredLabel": "Featured",
     "featuredTitle": "Weekly Events",
     "scheduleLabel": "Every Week",

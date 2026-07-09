@@ -31,7 +31,7 @@ The Twisted website uses a **Google Doc as a simple CMS**. Edit the doc, redeplo
 | `event:slug` | Weekly event title, time, description, highlights (e.g. `event:karaoke-night`) |
 | `menu` | Menu page header, intro, disclaimer |
 | `menu.section:id` | Full menu categories (appetizers, wings, cocktails, etc.) |
-| `links` | Link-in-bio page (`/links`) |
+| `links` | `/links` page — full button list (label, URL, order, icons) |
 
 **Not in CMS:** Images, PDFs (`/menu/*.pdf`), page layout/CSS.
 
@@ -52,6 +52,28 @@ If the doc is empty or unreachable, the build falls back to `data/*.seed.json`.
 ---
 
 ## Document format
+
+### Links page (`/links`)
+
+```
+=== links ===
+tagline: Sports Bar & Grill · The Colony, TX
+footer_website_url: https://twisteddfw.com
+footer_website_display: twisteddfw.com
+links:
+- label: Food Menu | url: /menu/food.pdf | style: primary | hint: PDF
+- label: Drinks Menu | url: /menu/drinks.pdf | style: primary | hint: PDF
+- label: Hookah Menu | url: /menu/hookah.pdf | style: primary | hint: PDF
+- label: Events | url: /events | style: primary
+- label: Instagram | url: https://instagram.com/... | icon: instagram
+- label: Our Menu | url: /menu | style: primary
+```
+
+**Fields per link:** `label`, `url`, optional `style: primary`, `hint: PDF`, `icon: instagram|facebook|google`
+
+Add, remove, or reorder lines to change the NFC/QR links page.
+
+### General format
 
 ```
 === site ===

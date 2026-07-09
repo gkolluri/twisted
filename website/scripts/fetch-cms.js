@@ -4,6 +4,7 @@ const path = require('path');
 const { parseDocument, sectionsToCms, isDocumentPopulated } = require('./lib/cms-parser');
 const {
   deepMerge,
+  mergeLinkItems,
   mergeMenuFromSections,
   mergeEventsFromSections,
   extendCmsFromSections,
@@ -50,6 +51,11 @@ async function main() {
       const parsed = sectionsToCms(sections);
       cms = deepMerge(cmsSeed, parsed);
       cms = extendCmsFromSections(cms, sections);
+      if (cms.links) {
+        cms.links.items = mergeLinkItems(cmsSeed.links?.items, cms.links.items);
+        if (cmsSeed.links?.footerWebsiteUrl) cms.links.footerWebsiteUrl = cmsSeed.links.footerWebsiteUrl;
+        if (cmsSeed.links?.footerWebsiteDisplay) cms.links.footerWebsiteDisplay = cmsSeed.links.footerWebsiteDisplay;
+      }
       menu = mergeMenuFromSections(sections, menuSeed);
       events = mergeEventsFromSections(sections, eventsSeed);
       source = `google-doc:${docId}`;

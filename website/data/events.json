@@ -19,7 +19,8 @@
     ],
     "description": "Weekday happy hour — food and drink specials Monday through Friday, 4:00 – 7:00 PM. Dine in or grab a seat at the bar.",
     "weeklyBlurb": "Food and drink specials at the bar and patio.",
-    "metaDescription": "Monday happy hour at Twisted Bar & Grill in The Colony, TX — food and drink specials 4–7 PM near Grandscape."
+    "metaDescription": "Monday happy hour at Twisted Bar & Grill in The Colony, TX — food and drink specials 4–7 PM near Grandscape.",
+    "featuredOnListing": false
   },
   {
     "slug": "happy-hour-tuesday",
@@ -41,7 +42,8 @@
     ],
     "description": "Weekday happy hour — food and drink specials Monday through Friday, 4:00 – 7:00 PM.",
     "weeklyBlurb": "Food and drink specials at the bar and patio.",
-    "metaDescription": "Tuesday happy hour at Twisted Bar & Grill in The Colony, TX — food and drink specials 4–7 PM."
+    "metaDescription": "Tuesday happy hour at Twisted Bar & Grill in The Colony, TX — food and drink specials 4–7 PM.",
+    "featuredOnListing": false
   },
   {
     "slug": "karaoke-night",
@@ -160,7 +162,8 @@
         "label": "Ladies Lounge",
         "detail": "Live DJ, drink specials, and dance floor energy"
       }
-    ]
+    ],
+    "featuredOnListing": false
   },
   {
     "slug": "friday-nights",

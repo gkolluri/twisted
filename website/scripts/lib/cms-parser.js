@@ -176,14 +176,86 @@ function sectionsToCms(sections) {
   };
 
   if (sections.links) {
+    const rawItems = sections.links.link || sections.links.links || sections.links.items || sections.links.item || [];
     cms.links = {
       tagline: sections.links.tagline || '',
-      foodMenuLabel: sections.links.food_menu_label || 'Food & Drinks Menu',
-      hookahMenuLabel: sections.links.hookah_menu_label || 'Hookah Menu',
+      footerWebsiteUrl: sections.links.footer_website_url || 'https://twisteddfw.com',
+      footerWebsiteDisplay: sections.links.footer_website_display || sections.links.footer_website_label || 'twisteddfw.com',
+      items: rawItems.map(normalizeLinkItem),
     };
+    // Legacy single-field labels (backward compatible)
+    if (!cms.links.items.length && (sections.links.food_menu_label || sections.links.drinks_menu_label || sections.links.hookah_menu_label || sections.links.events_label)) {
+      cms.links.items = buildLegacyLinkItems(sections.links, sections.site || {});
+    }
   }
 
   return cms;
+}
+
+function normalizeLinkItem(item) {
+  if (typeof item === 'string') {
+    const parts = item.split('|').map((s) => s.trim());
+    const out = {};
+    for (const part of parts) {
+      const m = part.match(/^([a-z0-9_]+):\s*(.+)$/i);
+      if (m) out[m[1].toLowerCase()] = m[2].trim();
+    }
+    return {
+      label: out.label || '',
+      url: out.url || '',
+      style: out.style || '',
+      hint: out.hint || '',
+      icon: out.icon || '',
+    };
+  }
+  return {
+    label: item.label || '',
+    url: item.url || item.href || '',
+    style: item.style || '',
+    hint: item.hint || '',
+    icon: item.icon || '',
+  };
+}
+
+function buildLegacyLinkItems(linksSection, site) {
+  const items = [];
+  if (linksSection.food_menu_label) {
+    items.push({
+      label: linksSection.food_menu_label,
+      url: linksSection.food_menu_url || '/menu/food.pdf',
+      style: 'primary',
+      hint: 'PDF',
+    });
+  }
+  if (linksSection.drinks_menu_label) {
+    items.push({
+      label: linksSection.drinks_menu_label,
+      url: linksSection.drinks_menu_url || '/menu/drinks.pdf',
+      style: 'primary',
+      hint: 'PDF',
+    });
+  }
+  if (linksSection.hookah_menu_label) {
+    items.push({
+      label: linksSection.hookah_menu_label,
+      url: linksSection.hookah_menu_url || '/menu/hookah.pdf',
+      style: 'primary',
+      hint: 'PDF',
+    });
+  }
+  if (linksSection.events_label) {
+    items.push({
+      label: linksSection.events_label,
+      url: linksSection.events_url || '/events',
+      style: 'primary',
+    });
+  }
+  if (site.instagram) items.push({ label: 'Instagram', url: site.instagram, icon: 'instagram' });
+  if (site.facebook) items.push({ label: 'Facebook', url: site.facebook, icon: 'facebook' });
+  if (site.google_reviews || site.googlereviews) {
+    items.push({ label: 'Google Reviews', url: site.google_reviews || site.googlereviews, icon: 'google' });
+  }
+  return items;
 }
 
 function normalizeFeature(item) {
