@@ -22,7 +22,22 @@ const root = path.join(__dirname, '..');
 const outDir = path.join(root, 'public');
 
 const skipDirs = new Set(['public', 'scripts', 'node_modules', '.vercel', 'data']);
-const skipFiles = new Set(['package.json', 'vercel.json', 'events-ticketed-section.html', 'events-featured-grid.html', 'events-weekly-schedule.html']);
+const skipFiles = new Set(['package.json', 'vercel.json', 'events-ticketed-section.html', 'events-featured-grid.html', 'events-weekly-schedule.html', 'cms-replacements.json']);
+
+const cmsReplacementsPath = path.join(root, 'data', 'cms-replacements.json');
+
+function loadCmsReplacements() {
+  if (!fs.existsSync(cmsReplacementsPath)) return {};
+  return JSON.parse(fs.readFileSync(cmsReplacementsPath, 'utf8'));
+}
+
+function injectCms(content, replacements) {
+  let out = content;
+  for (const [key, value] of Object.entries(replacements)) {
+    out = out.split(`{{${key}}}`).join(value ?? '');
+  }
+  return out;
+}
 
 const gaMeasurementId = (process.env.GA_MEASUREMENT_ID ?? 'G-WXJQXBRBKB').trim();
 
@@ -56,7 +71,8 @@ function injectUrls(content) {
 }
 
 function processHtml(content) {
-  let out = injectUrls(content);
+  const cms = loadCmsReplacements();
+  let out = injectCms(injectUrls(content), cms);
   if (out.includes('{{FEATURED_EVENTS_GRID}}')) {
     const gridPath = path.join(root, 'events-featured-grid.html');
     const grid = fs.existsSync(gridPath) ? fs.readFileSync(gridPath, 'utf8') : '';
@@ -96,7 +112,7 @@ function copyDir(src, dest) {
       const raw = fs.readFileSync(srcPath, 'utf8');
       const content = /\.html$/.test(entry.name)
         ? processHtml(raw)
-        : injectUrls(raw);
+        : injectCms(injectUrls(raw), loadCmsReplacements());
       fs.writeFileSync(destPath, content);
     } else {
       fs.copyFileSync(srcPath, destPath);

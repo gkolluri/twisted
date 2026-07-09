@@ -3,7 +3,10 @@
   "private": true,
   "description": "Twisted Bar & Grill — static website for twisteddfw.com",
   "scripts": {
-    "build": "node scripts/generate-events.js && node scripts/generate-ticketed-events.js && node scripts/prepare.js",
+    "cms:fetch": "node scripts/fetch-cms.js",
+    "cms:generate": "node scripts/generate-cms.js",
+    "cms:export": "node scripts/export-cms-document.js",
+    "build": "node scripts/fetch-cms.js && node scripts/generate-cms.js && node scripts/generate-events.js && node scripts/generate-ticketed-events.js && node scripts/prepare.js",
     "dev": "node scripts/dev-server.js"
   }
 }
