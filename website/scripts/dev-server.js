@@ -7,6 +7,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const { spawn } = require('child_process');
+const { handleContactSubmission } = require(path.join(__dirname, '..', '..', 'api', 'lib', 'contact'));
 
 const root = path.join(__dirname, '..');
 const publicDir = path.join(root, 'public');
@@ -34,6 +35,8 @@ const htmlRedirects = {
   '/menu.html': '/menu',
   '/events.html': '/events',
   '/links.html': '/links',
+  '/our-space.html': '/our-space',
+  '/contact.html': '/contact',
 };
 
 function resolveFile(urlPath) {
@@ -78,9 +81,59 @@ function runBuild() {
   });
 }
 
+function readJsonBody(req) {
+  return new Promise((resolve, reject) => {
+    let raw = '';
+    req.on('data', (chunk) => { raw += chunk; });
+    req.on('end', () => {
+      try {
+        resolve(raw ? JSON.parse(raw) : {});
+      } catch (err) {
+        reject(err);
+      }
+    });
+    req.on('error', reject);
+  });
+}
+
+async function handleContactApi(req, res) {
+  res.setHeader('Content-Type', 'application/json; charset=utf-8');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    res.writeHead(204);
+    res.end();
+    return;
+  }
+
+  if (req.method !== 'POST') {
+    res.writeHead(405);
+    res.end(JSON.stringify({ error: 'Method not allowed' }));
+    return;
+  }
+
+  try {
+    const body = await readJsonBody(req);
+    const result = await handleContactSubmission(body);
+    res.writeHead(200);
+    res.end(JSON.stringify(result));
+  } catch (err) {
+    res.writeHead(err.status || 500);
+    res.end(JSON.stringify({ error: err.message || 'Something went wrong.' }));
+  }
+}
+
 function startServer() {
-  const server = http.createServer((req, res) => {
+  const server = http.createServer(async (req, res) => {
     const url = new URL(req.url, `http://localhost:${port}`);
+
+    if (url.pathname === '/api/contact') {
+      await handleContactApi(req, res);
+      return;
+    }
+
     const redirect = htmlRedirects[url.pathname];
     if (redirect) {
       res.writeHead(301, { Location: redirect });

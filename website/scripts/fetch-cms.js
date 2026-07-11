@@ -56,6 +56,10 @@ async function main() {
         if (cmsSeed.links?.footerWebsiteUrl) cms.links.footerWebsiteUrl = cmsSeed.links.footerWebsiteUrl;
         if (cmsSeed.links?.footerWebsiteDisplay) cms.links.footerWebsiteDisplay = cmsSeed.links.footerWebsiteDisplay;
       }
+      if (cms.homepage?.hero && cmsSeed.homepage?.hero) {
+        if (cmsSeed.homepage.hero.tagline) cms.homepage.hero.tagline = cmsSeed.homepage.hero.tagline;
+        if (cmsSeed.homepage.hero.tagline2) cms.homepage.hero.tagline2 = cmsSeed.homepage.hero.tagline2;
+      }
       menu = mergeMenuFromSections(sections, menuSeed);
       events = mergeEventsFromSections(sections, eventsSeed);
       source = `google-doc:${docId}`;

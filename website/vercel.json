@@ -15,7 +15,9 @@
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/menu.html", "destination": "/menu", "permanent": true },
     { "source": "/events.html", "destination": "/events", "permanent": true },
-    { "source": "/links.html", "destination": "/links", "permanent": true }
+    { "source": "/links.html", "destination": "/links", "permanent": true },
+    { "source": "/our-space.html", "destination": "/our-space", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact", "permanent": true }
   ],
   "headers": [
     {

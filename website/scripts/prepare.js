@@ -22,7 +22,7 @@ const root = path.join(__dirname, '..');
 const outDir = path.join(root, 'public');
 
 const skipDirs = new Set(['public', 'scripts', 'node_modules', '.vercel', 'data']);
-const skipFiles = new Set(['package.json', 'vercel.json', 'events-ticketed-section.html', 'events-featured-grid.html', 'events-weekly-schedule.html', 'cms-replacements.json']);
+const skipFiles = new Set(['package.json', 'vercel.json', 'events-ticketed-section.html', 'events-featured-grid.html', 'events-weekly-schedule.html', 'cms-replacements.json', 'site-footer.html', 'location-panel.html']);
 
 const cmsReplacementsPath = path.join(root, 'data', 'cms-replacements.json');
 
@@ -71,8 +71,19 @@ function injectUrls(content) {
 }
 
 function processHtml(content) {
+  let out = injectUrls(content);
+  if (out.includes('{{SITE_FOOTER}}')) {
+    const footerPath = path.join(root, 'site-footer.html');
+    const footer = fs.existsSync(footerPath) ? fs.readFileSync(footerPath, 'utf8') : '';
+    out = out.replace('{{SITE_FOOTER}}', footer);
+  }
+  if (out.includes('{{SITE_LOCATION_PANEL}}')) {
+    const panelPath = path.join(root, 'location-panel.html');
+    const panel = fs.existsSync(panelPath) ? fs.readFileSync(panelPath, 'utf8') : '';
+    out = out.replace('{{SITE_LOCATION_PANEL}}', panel);
+  }
   const cms = loadCmsReplacements();
-  let out = injectCms(injectUrls(content), cms);
+  out = injectCms(out, cms);
   if (out.includes('{{FEATURED_EVENTS_GRID}}')) {
     const gridPath = path.join(root, 'events-featured-grid.html');
     const grid = fs.existsSync(gridPath) ? fs.readFileSync(gridPath, 'utf8') : '';

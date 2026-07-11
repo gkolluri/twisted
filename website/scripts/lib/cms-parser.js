@@ -128,6 +128,7 @@ function sectionsToCms(sections) {
     line1: hero.line1 || hero.title_line1 || '',
     line2: hero.line2 || hero.title_line2 || '',
     tagline: hero.tagline || '',
+    tagline2: hero.tagline_2 || hero.tagline2 || '',
     description: hero.description || '',
     ctaPrimary: hero.cta_primary || 'See Weekly Events',
     ctaSecondary: hero.cta_secondary || 'Call Us',

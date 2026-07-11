@@ -34,6 +34,7 @@ const lines = [
   `line1: ${cms.homepage.hero.line1}`,
   `line2: ${cms.homepage.hero.line2}`,
   `tagline: ${cms.homepage.hero.tagline}`,
+  `tagline_2: ${cms.homepage.hero.tagline2 || ''}`,
   `description: ${cms.homepage.hero.description}`,
   `cta_primary: ${cms.homepage.hero.ctaPrimary}`,
   `cta_secondary: ${cms.homepage.hero.ctaSecondary}`,

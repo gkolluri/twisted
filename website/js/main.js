@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const activePage = document.body.dataset.page;
+  if (activePage) {
+    const href = activePage === 'home' ? '/' : `/${activePage}`;
+    document.querySelectorAll('.nav-links a').forEach((link) => {
+      try {
+        const path = new URL(link.href, window.location.origin).pathname.replace(/\/$/, '') || '/';
+        const target = href.replace(/\/$/, '') || '/';
+        if (path === target) link.classList.add('active');
+      } catch (_) {
+        /* ignore malformed href */
+      }
+    });
+  }
+
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.nav-links');
 

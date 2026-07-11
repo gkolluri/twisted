@@ -1,0 +1,51 @@
+      <div class="location-card">
+        <div class="location-card-map">
+          <iframe
+            title="Twisted Bar &amp; Grill on Google Maps"
+            src="https://maps.google.com/maps?q={{CMS_ADDRESS_QUERY}}&amp;z=15&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="location-card-details">
+          <div class="location-card-top">
+            <div class="location-card-heading">
+              <p class="location-venue">Twisted Bar &amp; Grill</p>
+              <h3 class="location-city">The Colony, TX</h3>
+            </div>
+            <a class="btn btn-outline btn-sm location-directions-btn" href="https://maps.google.com/?q={{CMS_ADDRESS_QUERY}}" target="_blank" rel="noopener noreferrer">Get directions</a>
+          </div>
+
+          <div class="location-card-grid">
+            <div class="location-field">
+              <p class="location-label">Address</p>
+              <address class="location-value">
+                <span class="location-value-line">{{CMS_ADDRESS_LINE1}}</span>
+                <span class="location-value-line">{{CMS_ADDRESS_LINE2}}</span>
+              </address>
+            </div>
+            <div class="location-field">
+              <p class="location-label">Contact</p>
+              <div class="location-value">
+                <a class="location-value-line" href="tel:{{CMS_PHONE_TEL}}">{{CMS_PHONE}}</a>
+                <a class="location-value-line" href="mailto:{{CMS_EMAIL}}">{{CMS_EMAIL}}</a>
+              </div>
+            </div>
+          </div>
+
+          <hr class="location-divider">
+
+          <div class="location-card-bottom">
+            <div class="location-hours-today">
+              <p class="location-hours-line location-hours-line--strong">Open daily</p>
+              <p class="location-hours-line">{{CMS_HOURS_WEEKDAY}} · {{CMS_HOURS_WEEKDAY_TIME}}</p>
+              <p class="location-hours-line">{{CMS_HOURS_WEEKEND}} · {{CMS_HOURS_WEEKEND_TIME}}</p>
+            </div>
+            <div class="location-card-actions">
+              <a href="tel:{{CMS_PHONE_TEL}}" class="btn btn-primary btn-sm location-call-btn">Call us</a>
+            </div>
+          </div>
+        </div>
+      </div>

@@ -261,6 +261,7 @@ function buildReplacements(cms, menu) {
     CMS_HERO_LINE1: hero.line1,
     CMS_HERO_LINE2: hero.line2,
     CMS_HERO_TAGLINE: hero.tagline,
+    CMS_HERO_TAGLINE2: hero.tagline2 || '',
     CMS_HERO_DESC: hero.description,
     CMS_HERO_CTA_PRIMARY: hero.ctaPrimary,
     CMS_HERO_CTA_SECONDARY: hero.ctaSecondary,

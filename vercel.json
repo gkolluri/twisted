@@ -7,16 +7,19 @@
   "trailingSlash": false,
   "build": {
     "env": {
-      "SITE_URL": "https://twisted-liart.vercel.app",
+      "SITE_URL": "https://twisteddfw.com",
       "GA_MEASUREMENT_ID": "G-WXJQXBRBKB",
-      "GOOGLE_DOC_ID": "1Xv98qwrWbPNbITAR8pOItIAXsMW-Ugo1IztD6qUeS48"
+      "GOOGLE_DOC_ID": "1Xv98qwrWbPNbITAR8pOItIAXsMW-Ugo1IztD6qUeS48",
+      "CONTACT_TO_EMAIL": "info@twisteddfw.com"
     }
   },
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/menu.html", "destination": "/menu", "permanent": true },
     { "source": "/events.html", "destination": "/events", "permanent": true },
-    { "source": "/links.html", "destination": "/links", "permanent": true }
+    { "source": "/links.html", "destination": "/links", "permanent": true },
+    { "source": "/our-space.html", "destination": "/our-space", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact", "permanent": true }
   ],
   "headers": [
     {
