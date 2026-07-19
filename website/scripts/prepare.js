@@ -1,22 +1,16 @@
 #!/usr/bin/env node
 /**
  * Builds static site into public/ with SITE_URL injected.
- * Default public URL: https://twisted-liart.vercel.app (set in vercel.json).
- * When twisteddfw.com is live with SSL, set SITE_URL=https://twisteddfw.com in Vercel Production only.
+ * Default public URL: https://www.twisteddfw.com (set in vercel.json).
  */
 const fs = require('fs');
 const path = require('path');
 
-const DEFAULT_PUBLIC_URL = 'https://twisted-liart.vercel.app';
+const DEFAULT_PUBLIC_URL = 'https://www.twisteddfw.com';
 
 const trimUrl = (url) => url.replace(/\/$/, '');
 
-const siteUrl = (() => {
-  const env = process.env.SITE_URL ? trimUrl(process.env.SITE_URL) : DEFAULT_PUBLIC_URL;
-  // Custom domain not live yet — keep all public URLs on the stable Vercel alias.
-  if (env.includes('twisteddfw.com')) return DEFAULT_PUBLIC_URL;
-  return env;
-})();
+const siteUrl = trimUrl(process.env.SITE_URL || DEFAULT_PUBLIC_URL);
 
 const root = path.join(__dirname, '..');
 const outDir = path.join(root, 'public');

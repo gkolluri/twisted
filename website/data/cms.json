@@ -1,8 +1,8 @@
 {
   "site": {
     "name": "Twisted Bar & Grill",
-    "phone": "(972) 444-4915",
-    "phoneTel": "+19724444915",
+    "phone": "(214) 407-7587",
+    "phoneTel": "+12144077587",
     "email": "info@twisteddfw.com",
     "addressLine1": "6520 Cascades Court #200",
     "addressLine2": "The Colony, TX 75056",
@@ -21,14 +21,14 @@
       "line2": "Feel the Beat.",
       "tagline": "One place, every experience.",
       "tagline2": "Till 2 AM all 7 days.",
-      "description": "DFW's most electrifying bar & grill — handcrafted cocktails, draft beers on tap, fire-grilled plates, late open kitchen till 1 AM and premium upscale lounge seating. Premium Hookah. Live bands, DJs and dance floor vibes. Weekend brunch. Air-conditioned covered patio and open-air courtyard oasis. Right by Grandscape, in the middle of DFW metroplex.",
+      "description": "DFW's most electrifying bar & grill — handcrafted cocktails, draft beers on tap, fire-grilled plates, and premium upscale lounge seating. Hookah. Live bands & DJs. Weekend brunch. Covered patio and open-air courtyard. Right by Grandscape.",
       "ctaPrimary": "See Weekly Events",
-      "ctaSecondary": "Call Us at (972) 444-4915"
+      "ctaSecondary": "Call Us"
     },
     "about": {
       "label": "About Us",
       "title": "More Than a Bar. An Entertainment Destination",
-      "subtitle": "Twisted is where North DFW comes together — whether you're in Frisco, Plano, Prosper, Lewisville, McKinney, Allen, Little Elm, Carrollton, or Irving. Twisted is your go to destination for live sports watch parties, trivia nights, service industry nights, karaoke nights, ladies nights, international music nights, live music performances, themed parties, R&B weekend brunches and community celebrations from open to close. Walk in with your crew, book a private event, celebrate a birthday or anniversary or graduation or a milestone of life or just go with the flow and relax. The kitchen is open late till 1am. Bar serving until 2 AM, every night of the week.",
+      "subtitle": "Twisted is where The Colony comes together — trivia nights, live performances, themed parties, and community celebrations from open to close. Walk in with your crew, book a private event, or settle in for the evening. Open until 2 AM every night.",
       "features": [
         {
           "icon": "🍸",
@@ -69,8 +69,8 @@
     },
     "gallery": {
       "spaceLabel": "Our Space",
-      "spaceTitle": "A Modern Sports Lounge in North DFW",
-      "spaceBody1": "Massive 175” LED wall, 150” Screen and 4K TVs in every corner, comfortable booths, patio seating, and a full bar — whether you're catching the game or meeting friends for dinner, Twisted has you covered.",
+      "spaceTitle": "A Modern Sports Bar in The Colony",
+      "spaceBody1": "Wide-screen TVs, comfortable booths, patio seating, and a full bar — whether you're catching the game or meeting friends for dinner, Twisted has you covered.",
       "spaceBody2": "Located at Cascades Court near Grandscape and Topgolf — the go-to spot for North Dallas suburbs including Frisco, Lewisville, Plano, and Carrollton.",
       "barLabel": "Full Bar",
       "barTitle": "Cocktails, Craft Beer & Lounge",
@@ -181,21 +181,21 @@
         "style": "primary"
       },
       {
-        "label": "Follow Us On Instagram",
+        "label": "Instagram",
         "url": "https://www.instagram.com/twistedbarandgrill.dfw/",
         "style": "",
         "hint": "",
         "icon": "instagram"
       },
       {
-        "label": "Join Our Facebook Family",
+        "label": "Facebook",
         "url": "https://www.facebook.com/twistedbandg/",
         "style": "",
         "hint": "",
         "icon": "facebook"
       },
       {
-        "label": "Review Us On Google Reviews",
+        "label": "Google Reviews",
         "url": "https://www.google.com/search?q=twisted+google+colony&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_zwDEKEM5oQpFUA03DZZdPpiaShl6Fmf0pOD3fe1RLmT2QVyLLo3ZB63baHGjHlpDeCzRscPXQQeBDOvTu7vIGgUxDlFcg-IUF26h_rmeLFt_9Iw2g%3D%3D",
         "style": "",
         "hint": "",
