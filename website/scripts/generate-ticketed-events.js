@@ -56,7 +56,7 @@ function detailsList(event) {
 
 function detailActions() {
   return `<div class="event-detail-actions">
-            <a href="tel:+12144077587" class="btn btn-primary">Call to Reserve a Table</a>
+            <a href="tel:{{CMS_PHONE_TEL}}" class="btn btn-primary">Call to Reserve a Table</a>
             <a href="/events" class="btn btn-outline">All Events</a>
           </div>`;
 }
@@ -167,6 +167,7 @@ ${eventDatesSchema(event)}
       <ul class="nav-links">
         <li><a href="/">Home</a></li>
         <li><a href="/menu">Menu</a></li>
+        <li><a href="https://order.toasttab.com/online/twisted-bar-and-grill-the-colony" target="_blank" rel="noopener noreferrer">Order Online</a></li>
         <li><a href="/our-space">Our Space</a></li>
         <li><a href="/events">Events</a></li>
         <li><a href="/contact">Contact Us</a></li>

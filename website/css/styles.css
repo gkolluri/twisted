@@ -2105,6 +2105,7 @@ section {
   line-height: 1.6;
 }
 
+.menu-section-actions,
 .space-cta-actions {
   display: flex;
   flex-wrap: wrap;

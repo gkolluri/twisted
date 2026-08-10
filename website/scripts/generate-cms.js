@@ -180,8 +180,11 @@ function renderMenuBody(menu) {
   let html = '';
   for (const section of sections) html += renderMenuSection(section, page.hookahNote);
   html += `      <p class="menu-disclaimer">${esc(page.disclaimer)}</p>\n\n`;
-  html += `      <div style="margin-top: 2rem; text-align: center; padding-bottom: 2rem;">
-        <a href="tel:{{CMS_PHONE_TEL}}" class="btn btn-primary">Call {{CMS_PHONE}}</a>
+  html += `      <div class="menu-section-cta">
+        <div class="menu-section-actions">
+          <a href="https://order.toasttab.com/online/twisted-bar-and-grill-the-colony" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Order Online</a>
+          <a href="tel:{{CMS_PHONE_TEL}}" class="btn btn-outline">Call {{CMS_PHONE}}</a>
+        </div>
       </div>\n`;
   return html;
 }

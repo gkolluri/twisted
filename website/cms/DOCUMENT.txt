@@ -3,8 +3,8 @@ Edit this document to update the website. Redeploy (or run npm run build) to pub
 
 === site ===
 name: Twisted Bar & Grill
-phone: (214) 407-7587
-phone_tel: +12144077587
+phone: +1 (972) 444-4915
+phone_tel: +19724444915
 email: info@twisteddfw.com
 address_line1: 6520 Cascades Court #200
 address_line2: The Colony, TX 75056
@@ -285,6 +285,7 @@ links:
 - label: Food Menu | url: /menu/food.pdf | style: primary | hint: PDF
 - label: Drinks Menu | url: /menu/drinks.pdf | style: primary | hint: PDF
 - label: Hookah Menu | url: /menu/hookah.pdf | style: primary | hint: PDF
+- label: Order Online | url: https://order.toasttab.com/online/twisted-bar-and-grill-the-colony | style: primary
 - label: Events | url: /events | style: primary
 - label: Instagram | url: https://www.instagram.com/twistedbarandgrill.dfw/ | icon: instagram
 - label: Facebook | url: https://www.facebook.com/twistedbandg/ | icon: facebook

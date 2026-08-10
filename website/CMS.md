@@ -77,7 +77,7 @@ Add, remove, or reorder lines to change the NFC/QR links page.
 
 ```
 === site ===
-phone: (214) 407-7587
+phone: +1 (972) 444-4915
 
 === homepage.hero ===
 line1: Eat. Drink.

@@ -181,7 +181,7 @@ function ctaSection(event) {
         <p class="event-landing-cta-desc">${esc(event.weeklyBlurb || event.description)}</p>
       </div>
       <div class="event-landing-cta-actions">
-        <a href="tel:+12144077587" class="btn btn-primary">Call to Reserve</a>
+        <a href="tel:{{CMS_PHONE_TEL}}" class="btn btn-primary">Call to Reserve</a>
         <a href="/events" class="btn btn-outline">All Weekly Events</a>
       </div>
     </div>
@@ -220,7 +220,7 @@ function renderTeaserMain(event) {
           ${highlightsBlock(event)}
           <p class="event-detail-desc">${esc(event.description)}</p>
           <div class="event-detail-actions event-detail-actions--compact">
-            <a href="tel:+12144077587" class="btn btn-primary">Call to Reserve</a>
+            <a href="tel:{{CMS_PHONE_TEL}}" class="btn btn-primary">Call to Reserve</a>
             <a href="/events" class="btn btn-outline">All Weekly Events</a>
           </div>
         </div>
@@ -248,7 +248,7 @@ function renderListingCard(event) {
             <p class="event-teaser-summary">${esc(event.when)} · ${esc(event.time)}</p>
             <div class="event-showcase-actions event-detail-actions">
               <a href="/events/${event.slug}" class="btn btn-primary">Event Details</a>
-              <a href="tel:+12144077587" class="btn btn-outline">Call Us</a>
+              <a href="tel:{{CMS_PHONE_TEL}}" class="btn btn-outline">Call Us</a>
             </div>
           </div>
         </article>`;
@@ -371,6 +371,7 @@ function renderPage(event) {
       <ul class="nav-links">
         <li><a href="/">Home</a></li>
         <li><a href="/menu">Menu</a></li>
+        <li><a href="https://order.toasttab.com/online/twisted-bar-and-grill-the-colony" target="_blank" rel="noopener noreferrer">Order Online</a></li>
         <li><a href="/our-space">Our Space</a></li>
         <li><a href="/events">Events</a></li>
         <li><a href="/contact">Contact Us</a></li>
